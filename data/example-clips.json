@@ -1,0 +1,62 @@
+[
+  {
+    "number": 1,
+    "headline": "Scientists gave five AIs their own societies and watched what happened",
+    "what_happened": "Researchers ran a simulation where five different AI models governed their own societies. Claude built a democracy and approved 98% of all laws — including bad ones. Grok collapsed into crime and extinction in four days. GPT-5 agents forgot to eat and the simulation stopped. Gemini maintained order inside what researchers called 'a shared hallucination.'",
+    "protagonist": "Five AI models (Claude, Grok, GPT-5, Gemini, others)",
+    "visual_available": "Likely",
+    "urgency": "Now",
+    "tiktok_format": "Story time",
+    "angle_hint": "Personality test disguised as a warning about agentic AI",
+    "source": "MIT Technology Review",
+    "track": "B"
+  },
+  {
+    "number": 2,
+    "headline": "The Pope published a 42,000-word document on AI that included a Gandalf quote",
+    "what_happened": "The Vatican released a major papal document on AI ethics. It quoted Gandalf from Lord of the Rings, called out surveillance capitalism by name, and told tech leaders to stop building 'Babel's Tower.' The document specifically referenced Palantir — a surveillance company named after the magic ball Sauron uses to spy on people.",
+    "protagonist": "Pope Francis / The Vatican",
+    "visual_available": "Yes",
+    "urgency": "Has legs",
+    "tiktok_format": "Reaction",
+    "angle_hint": "The oldest institution on Earth is reading the same fantasy novels as your favorite tech billionaires — and drawing opposite conclusions",
+    "source": "The Guardian",
+    "track": "A"
+  },
+  {
+    "number": 3,
+    "headline": "A German startup is offering free apartment cleaning — if you let the cleaner wear a camera",
+    "what_happened": "Berlin-based startup Vejo is offering free home cleaning in New York in exchange for letting cleaners wear head-mounted cameras to capture data for training household robots. They say faces and IDs are blurred. Your stuff is not.",
+    "protagonist": "Vejo (Berlin startup)",
+    "visual_available": "Likely",
+    "urgency": "Now",
+    "tiktok_format": "Did you know",
+    "angle_hint": "The price is your privacy — framed as a bargain",
+    "source": "Wired",
+    "track": "B"
+  },
+  {
+    "number": 4,
+    "headline": "Martin Scorsese joined an AI image startup to storyboard his next film",
+    "what_happened": "Black Forest Labs announced Martin Scorsese as an investor and user of their AI image generation tool. He's using it to storyboard his next movie starring Leonardo DiCaprio and Jennifer Lawrence. Scorsese says it helps him communicate his vision faster.",
+    "protagonist": "Martin Scorsese / Black Forest Labs",
+    "visual_available": "Yes",
+    "urgency": "Now",
+    "tiktok_format": "Reaction",
+    "angle_hint": "The director who built a career on cinematic craft is now using AI to sketch it out first",
+    "source": "Variety",
+    "track": "A"
+  },
+  {
+    "number": 5,
+    "headline": "FIFA is deploying AI for offside calls at the 2026 World Cup",
+    "what_happened": "FIFA confirmed expanded use of semi-automated offside technology at the 2026 World Cup. Tracking cameras, ball sensors, and real-time AI analysis will flag decisions instantly. The system has been used in limited form since 2022 but this is the first full deployment.",
+    "protagonist": "FIFA",
+    "visual_available": "Yes",
+    "urgency": "Has legs",
+    "tiktok_format": "Explainer",
+    "angle_hint": "Putting a machine in the middle of the most argued-about call in the most watched sport on Earth",
+    "source": "BBC Sport",
+    "track": "B"
+  }
+]
