@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "headline": "G7 en Évian abre con fractura sobre soberanía tecnológica: EEUU, UE y Canadá presentan visiones incompatibles sobre el control de la IA",
+    "summary": "La cumbre del G7, que inició el 15 de junio en Évian (Francia), tiene a la inteligencia artificial como eje central ante visiones divergentes: la UE defiende independencia tecnológica, EEUU apuesta por desregulación para mantener liderazgo, y Canadá propone un modelo intermedio. Los CEO de OpenAI, Google y Anthropic asisten personalmente, una señal de cuánto poder corporativo ya opera dentro de los espacios diplomáticos de los estados. La pregunta real de la cumbre no es cómo regular la IA: es quién decide quién la controla.",
+    "source": "TechPolicy Press",
+    "source_url": "https://www.techpolicy.press/g7-summit-set-to-kick-off-amidst-allies-widening-rift-over-ai-sovereignty/",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Ursula von der Leyen diciendo que Europa no puede depender de otros para tecnologías que mantienen sus hospitales funcionando. La tensión: los estados llegan tarde, los CEO ya están en la sala.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "Los CEO de OpenAI, Anthropic, Google y Microsoft piden al Congreso de EEUU una ley que haga obligatorio el control de ADN sintético",
+    "summary": "El 5 de junio, Sam Altman, Dario Amodei, Demis Hassabis y Mustafa Suleyman firmaron una carta conjunta exigiendo al Congreso regulación obligatoria sobre proveedores de ADN sintético, argumentando que la IA ha eliminado las barreras técnicas que antes impedían el diseño de agentes biológicos peligrosos. El proyecto de ley S.3741, presentado por los senadores Cotton y Klobuchar, establecería controles de verificación y un sistema de auditoría. Es la primera vez que los líderes de las cuatro empresas más poderosas de IA se unen para pedir regulación gubernamental sobre su propio sector.",
+    "source": "WinBuzzer",
+    "source_url": "https://winbuzzer.com/2026/06/07/ai-leaders-back-dna-screening-as-biosecurity-chokepoint-xcxwbn/",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El ángulo inverso: las mismas empresas que crearon el riesgo piden al Estado que los frene. La tensión es que si la IA ya eliminó las barreras técnicas para diseñar bioarmas, ¿a quién le toca actuar y cuánto tiempo hay?",
+    "urgency": "Now"
+  },
+  {
+    "id": 3,
+    "headline": "EEUU tiene borrador de su primera ley federal de IA: el Great American AI Act preemptaría leyes estatales durante tres años",
+    "summary": "El 4 de junio, los representantes Jay Obernolte y Lori Trahan presentaron un borrador bipartidista de 270 páginas que crearía el primer marco federal de gobernanza de IA en Estados Unidos, con cuatro pilares: regulación de IA frontera, empleo, ciberseguridad e I+D. La propuesta más polémica es la preemption de tres años: los estados perderían la facultad de regular cómo se construyen los sistemas de IA. Si avanza, podría desactivar leyes estatales ya vigentes como la de Colorado. Es el primer intento serio de institucionalización federal de la IA en EEUU.",
+    "source": "FedScoop",
+    "source_url": "https://fedscoop.com/bipartisan-great-american-ai-act-draft-proposes-new-federal-ai-governance-framework/",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es la pelea entre estados y federación: Colorado lleva dos años construyendo su ley de IA y ahora el Congreso propone congelarla. La tensión es quién tiene la autoridad real sobre la tecnología que más rápido está transformando el país.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 4,
+    "headline": "Anthropic presenta su IPO a 965.000 millones de dólares: el laboratorio de IA más valorado de la historia llega a la bolsa",
+    "summary": "El 1 de junio, Anthropic presentó ante la SEC un S-1 confidencial para salir a bolsa en octubre de 2026, tras cerrar una ronda Serie H de 65.000 millones de dólares. Con ingresos anualizados de 47.000 millones y una valoración que supera a OpenAI, el laboratorio detrás de Claude ya no es una startup de seguridad: es infraestructura financiera global. La IPO consolidaría la dependencia de empresas, gobiernos y universidades en un modelo privado con accionistas.",
+    "source": "The Washington Post",
+    "source_url": "https://www.washingtonpost.com/technology/2026/06/01/anthropic-maker-claude-files-with-sec-go-public-an-ipo/",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es Daniela Amodei explicando que los costos de cómputo los fuerzan a ir a la bolsa. La tensión: el laboratorio que prometía ser la contraparte segura a OpenAI ahora tendrá obligaciones fiduciarias con inversores institucionales.",
+    "urgency": "Now"
+  },
+  {
+    "id": 5,
+    "headline": "Colorado revisa y retrasa su ley de IA: la primera regulación de alto riesgo de EEUU cede ante la presión de la industria",
+    "summary": "En mayo de 2026, el gobernador Polis firmó una ley que reescribe la Colorado AI Act original —vigente desde 2024— y pospone su implementación al 1 de enero de 2027. La nueva versión abandona el concepto de 'sistema de IA de alto riesgo' y lo reemplaza con un marco más estrecho. El caso Colorado ilustra la dificultad de sostener regulación frente a la velocidad de adopción y la presión de empresas tecnológicas que amenazan con retirar inversiones.",
+    "source": "Hunton Privacy and Cybersecurity Law Blog",
+    "source_url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es el gobernador Polis firmando una ley que deshace lo que el legislativo aprobó. La tensión: ¿cuánto puede durar una regulación de IA antes de que la industria logre renegociarla?",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "ChatGPT supera los 1.000 millones de usuarios mensuales: el asistente de IA más usado de la historia aún no tiene regulación de uso",
+    "summary": "El 12 de junio, OpenAI confirmó que ChatGPT superó los 1.000 millones de usuarios mensuales activos, más rápido que cualquier aplicación en la historia —Facebook, TikTok o Google Maps tardaron entre 5 y 8 años en alcanzar el mismo umbral. Con más de 400 millones de usuarios diarios y sesiones pico de 50 millones en simultáneo, una sola aplicación privada ahora procesa más conversaciones por día que la mayoría de los sistemas educativos o de atención al ciudadano de países enteros.",
+    "source": "Tech Startups",
+    "source_url": "https://techstartups.com/2026/06/12/chatgpt-hits-1-billion-monthly-users-despite-growing-ai-fears/",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El ángulo no es el número: es la velocidad. Ninguna tecnología había capturado a mil millones de personas tan rápido. La tensión es que este volumen de dependencia llegó antes que cualquier marco de gobernanza.",
+    "urgency": "Now"
+  },
+  {
+    "id": 7,
+    "headline": "Waymo quiere un millón de viajes autónomos por semana: la infraestructura de transporte sin conductor ya es un negocio de escala",
+    "summary": "Con respaldo de 16.000 millones de dólares y una valoración de 126.000 millones, Waymo acelera su expansión a 12 nuevas ciudades en 2026 —incluyendo Londres y Tokio— con el objetivo de superar el millón de viajes pagos por semana para finales de año. En primavera de 2026 ya realizaba más de un millón de viajes por mes. El taxi sin conductor deja de ser piloto: es infraestructura de transporte emergente que desplaza empleos y redefine quién controla la movilidad urbana.",
+    "source": "Technology Magazine",
+    "source_url": "https://technologymagazine.com/news/waymo-brings-robotaxis-to-three-more-us-cities",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es la ciudad de Londres: el primer mercado internacional de Waymo fuera de EEUU, donde reguladores, sindicatos de taxi y el gobierno municipal deberán decidir si dejan entrar a esta infraestructura privada.",
+    "urgency": "Now"
+  },
+  {
+    "id": 8,
+    "headline": "El 37% de los líderes empresariales planea reemplazar trabajadores con IA antes de fin de 2026, según encuesta global",
+    "summary": "Un relevamiento publicado en junio de 2026 muestra que el 37% de los directivos planea sustitución de personal humano con IA este año, con el 20% de las organizaciones usando IA para achatar su estructura jerárquica y eliminar más del 50% de las posiciones de gestión media. La IA ya automatiza soporte al cliente, análisis de datos, reclutamiento y reportes internos en la mayoría de las empresas relevadas. La diferencia con años anteriores: ya no son pilotos, son decisiones estructurales en curso.",
+    "source": "RecomAI",
+    "source_url": "https://www.recomai.one/ai-insights-hub/ai-agents-replacing-job-roles-2026",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es el gerente de nivel medio cuyo puesto está siendo eliminado no por eficiencia sino por una decisión tecnológica top-down. La tensión: las empresas llaman a esto 'transformación', los trabajadores lo llaman despido.",
+    "urgency": "Now"
+  },
+  {
+    "id": 9,
+    "headline": "Los reguladores de privacidad del G7 se reúnen en París con la agenda puesta en el enforcement de IA",
+    "summary": "El 23 de junio, las autoridades de protección de datos de los siete países del G7 se reunirán en París con 48 días antes de la fecha límite de enforcement del reglamento europeo de IA. La agenda incluye reglas de flujo transfronterizo de datos y coordinación de enforcement sobre sistemas de IA ya desplegados. Es la primera vez que los reguladores de privacidad de todas las democracias del G7 coordinan acción simultánea sobre IA —una señal de que el período de autorregulación voluntaria está terminando.",
+    "source": "Tech Times",
+    "source_url": "https://www.techtimes.com/articles/318417/20260615/g7-privacy-regulators-head-paris-ai-enforcement-deadline-48-days-out.htm",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El ángulo es la sincronización: siete reguladores coordinando acción al mismo tiempo, algo que no pasó con las redes sociales ni con las plataformas de e-commerce. La pregunta es si llegan a tiempo o si la IA ya es demasiado profunda para regular.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 10,
+    "headline": "La IA ya ahorra a los médicos más de 16 días laborales al año, pero el 60% de las empresas de salud la usa sin estrategia de gobernanza",
+    "summary": "Un informe publicado el 16 de junio revela que la IA clínica —principalmente asistentes de documentación y scribes ambientales— ya ahorra más de 16 días laborales por año a cada médico, y que la mitad de los profesionales reporta menor estrés laboral. Sin embargo, el 60% de las empresas de salud adopta herramientas de IA antes de tener políticas de gobernanza o auditoría de sesgos. La adopción masiva en un sector crítico sin marco de accountability es el patrón que define este momento.",
+    "source": "PYMNTS",
+    "source_url": "https://www.pymnts.com/news/artificial-intelligence/chatbot-tracker/2026/60-percent-of-healthcare-firms-turn-to-ai-chatbots-before-further-automation/",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es el médico que gana tiempo pero que no sabe quién audita las decisiones clínicas que la IA tomó en su nombre. La tensión: productividad y accountability van en direcciones opuestas.",
+    "urgency": "Has legs"
+  }
+]

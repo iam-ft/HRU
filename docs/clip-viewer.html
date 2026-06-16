@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reality Updated — Visor de edición</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #F5F4F0;
+      color: #1a1a1a;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      padding: 40px 20px 80px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      color: #5B52CC;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+    .back:hover { text-decoration: underline; }
+    .label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #5B52CC;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1.5px solid #e8e7e2;
+      transition: border-color 0.2s, opacity 0.2s;
+    }
+    .card.used {
+      opacity: 0.5;
+      border-color: #d1d5db;
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .card-badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .badge-high { background: #f0eeff; color: #5B52CC; }
+    .badge-medium { background: #fef9ec; color: #b08a00; }
+    .badge-low { background: #f3f4f6; color: #6b7280; }
+    .badge-now { background: #fff0f0; color: #c0392b; }
+    .badge-legs { background: #f0f9ff; color: #2980b9; }
+    .card h2 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.35;
+      color: #111;
+      flex: 1;
+    }
+    .card p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #444;
+      margin-bottom: 16px;
+    }
+    .axis {
+      font-size: 12px;
+      color: #888;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+    .angle {
+      background: #f8f7f4;
+      border-left: 3px solid #5B52CC;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: #555;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .source-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #5B52CC;
+      text-decoration: none;
+    }
+    .source-link:hover { text-decoration: underline; }
+    .source-name {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .btn-used {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: 1.5px solid #5B52CC;
+      background: transparent;
+      color: #5B52CC;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .btn-used:hover { background: #5B52CC; color: #fff; }
+    .btn-used.marked {
+      background: #f3f4f6;
+      border-color: #d1d5db;
+      color: #9ca3af;
+      cursor: default;
+    }
+    .btn-used.marked:hover { background: #f3f4f6; color: #9ca3af; }
+    .status-msg {
+      color: #999;
+      font-size: 15px;
+      padding: 40px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back">← Todas las ediciones</a>
+    <div class="label">Reality Updated</div>
+    <h1 id="page-title">Cargando edición…</h1>
+    <p class="meta" id="page-meta"></p>
+    <div class="cards" id="cards"></div>
+    <p class="status-msg" id="status-msg" style="display:none"></p>
+  </div>
+  <script>
+    function formatDate(dateStr) {
+      var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+      var parts = dateStr.split('-');
+      return parseInt(parts[2], 10) + ' de ' + months[parseInt(parts[1], 10) - 1] + ' de ' + parts[0];
+    }
+    function priorityBadge(p) {
+      var map = { high: 'badge-high', medium: 'badge-medium', low: 'badge-low' };
+      var labels = { high: 'Alta prioridad', medium: 'Media', low: 'Baja' };
+      return '<span class="badge ' + (map[p] || 'badge-low') + '">' + (labels[p] || p) + '</span>';
+    }
+    function urgencyBadge(u) {
+      if (u === 'Now') return '<span class="badge badge-now">Ahora</span>';
+      if (u === 'Has legs') return '<span class="badge badge-legs">Tiene recorrido</span>';
+      return '';
+    }
+    var params = new URLSearchParams(window.location.search);
+    var date = params.get('date');
+    if (!date) {
+      document.getElementById('page-title').textContent = 'Fecha no especificada';
+      document.getElementById('status-msg').textContent = 'Usa ?date=YYYY-MM-DD para cargar una edición.';
+      document.getElementById('status-msg').style.display = 'block';
+    } else {
+      document.getElementById('page-title').textContent = 'Edición ' + formatDate(date);
+      var storageKey = 'used_stories_' + date;
+      var used = JSON.parse(localStorage.getItem(storageKey) || '[]');
+      fetch('clips/' + date + '.json')
+        .then(function(r) {
+          if (!r.ok) throw new Error('not found');
+          return r.json();
+        })
+        .then(function(stories) {
+          var meta = document.getElementById('page-meta');
+          meta.textContent = stories.length + ' noticias · ' + formatDate(date);
+          var cards = document.getElementById('cards');
+          stories.forEach(function(s) {
+            var isUsed = used.indexOf(s.id) !== -1;
+            var card = document.createElement('div');
+            card.className = 'card' + (isUsed ? ' used' : '');
+            card.innerHTML =
+              '<div class="card-top">' +
+                '<h2>' + s.headline + '</h2>' +
+                '<div class="card-badges">' + priorityBadge(s.editorial_priority) + urgencyBadge(s.urgency) + '</div>' +
+              '</div>' +
+              '<p>' + s.summary + '</p>' +
+              '<div class="axis">' + s.editorial_axis + '</div>' +
+              '<div class="angle"><strong>Ángulo:</strong> ' + s.angle_hint + '</div>' +
+              '<div class="card-footer">' +
+                '<div>' +
+                  '<a class="source-link" href="' + s.source_url + '" target="_blank" rel="noopener">Leer nota →</a>' +
+                  '<br><span class="source-name">' + s.source + '</span>' +
+                '</div>' +
+                '<button class="btn-used' + (isUsed ? ' marked' : '') + '" data-id="' + s.id + '">' +
+                  (isUsed ? 'Usada ✓' : 'Marcar como usada') +
+                '</button>' +
+              '</div>';
+            cards.appendChild(card);
+          });
+          cards.addEventListener('click', function(e) {
+            var btn = e.target.closest('.btn-used');
+            if (!btn || btn.classList.contains('marked')) return;
+            var id = parseInt(btn.dataset.id, 10);
+            used = JSON.parse(localStorage.getItem(storageKey) || '[]');
+            if (used.indexOf(id) === -1) used.push(id);
+            localStorage.setItem(storageKey, JSON.stringify(used));
+            btn.textContent = 'Usada ✓';
+            btn.classList.add('marked');
+            btn.closest('.card').classList.add('used');
+          });
+        })
+        .catch(function() {
+          document.getElementById('page-title').textContent = 'Edición no encontrada';
+          document.getElementById('status-msg').textContent = 'No se pudo cargar la edición para la fecha ' + date + '.';
+          document.getElementById('status-msg').style.display = 'block';
+        });
+    }
+  </script>
+</body>
+</html>
