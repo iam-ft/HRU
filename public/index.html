@@ -19,7 +19,7 @@
 <body>
 <div id="root"></div>
 <script type="text/babel">
-const { useState, useCallback } = React;
+const { useState, useCallback, useEffect } = React;
 
 const ACCENT = '#5B52CC';
 
@@ -118,13 +118,17 @@ function StoryCard({ story, selected, onToggle }) {
   );
 }
 
-function ClippingView({ onScriptReady, onClipDate }) {
-  const [stories, setStories] = useState([]);
-  const [selected, setSelected] = useState(new Set());
+function ClippingView({ onScriptReady, onClipDate, initialStories }) {
+  const [stories, setStories] = useState(initialStories || []);
+  const [selected, setSelected] = useState(new Set(initialStories?.map(s => s.id ?? s.number) || []));
   const [loading, setLoading] = useState(false);
   const [scriptLoading, setScriptLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [mode, setMode] = useState('idle');
+  const [mode, setMode] = useState(initialStories?.length ? 'loaded' : 'idle');
+
+  useEffect(() => {
+    if (initialStories?.length) onClipDate(new Date());
+  }, []);
 
   const runClipping = async () => {
     setLoading(true); setError(null);
@@ -495,12 +499,30 @@ function App() {
   const [view, setView] = useState('clip');
   const [script, setScript] = useState(null);
   const [clipDate, setClipDate] = useState(null);
+  const [initialStories, setInitialStories] = useState(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const date = params.get('date');
+    const ids = params.get('ids');
+    if (!date || !ids) return;
+    const idList = ids.split(',').map(s => s.trim());
+    fetch(`https://iam-ft.github.io/HRU/clips/${date}.json`)
+      .then(r => r.json())
+      .then(stories => {
+        const filtered = stories.filter(s => idList.includes(String(s.id ?? s.number)));
+        if (filtered.length) {
+          setInitialStories(filtered);
+          window.history.replaceState({}, '', '/');
+        }
+      })
+      .catch(() => {});
+  }, []);
 
   const handleScriptReady = (data) => { setScript(data); setView('script'); };
 
   return (
     <div style={{ maxWidth: 740, margin: '0 auto', padding: '32px 24px' }}>
-      {/* Header */}
       <div style={{ marginBottom: 36 }}>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 12 }}>
           <h1 style={{ fontFamily: 'IBM Plex Mono', fontSize: 17, fontWeight: 500, letterSpacing: '0.06em', color: '#111' }}>
@@ -517,7 +539,7 @@ function App() {
       </div>
 
       {view === 'clip' && (
-        <ClippingView onScriptReady={handleScriptReady} onClipDate={setClipDate} />
+        <ClippingView onScriptReady={handleScriptReady} onClipDate={setClipDate} initialStories={initialStories} />
       )}
       {view === 'script' && script && (
         <ScriptView script={script} clipDate={clipDate} onBack={() => setView('clip')} />

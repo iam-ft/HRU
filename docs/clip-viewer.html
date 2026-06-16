@@ -1,260 +1,284 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reality Updated — Visor de edición</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: #F5F4F0;
-      color: #1a1a1a;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      min-height: 100vh;
-      padding: 40px 20px 80px;
-    }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-    .back {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      text-decoration: none;
-      color: #5B52CC;
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 32px;
-    }
-    .back:hover { text-decoration: underline; }
-    .label {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #5B52CC;
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-size: 26px;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin-bottom: 8px;
-    }
-    .meta {
-      font-size: 14px;
-      color: #888;
-      margin-bottom: 40px;
-    }
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 24px;
-      border: 1.5px solid #e8e7e2;
-      transition: border-color 0.2s, opacity 0.2s;
-    }
-    .card.used {
-      opacity: 0.5;
-      border-color: #d1d5db;
-    }
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-    .card-badges {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      flex-shrink: 0;
-    }
-    .badge {
-      font-size: 11px;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      white-space: nowrap;
-    }
-    .badge-high { background: #f0eeff; color: #5B52CC; }
-    .badge-medium { background: #fef9ec; color: #b08a00; }
-    .badge-low { background: #f3f4f6; color: #6b7280; }
-    .badge-now { background: #fff0f0; color: #c0392b; }
-    .badge-legs { background: #f0f9ff; color: #2980b9; }
-    .card h2 {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.35;
-      color: #111;
-      flex: 1;
-    }
-    .card p {
-      font-size: 14px;
-      line-height: 1.65;
-      color: #444;
-      margin-bottom: 16px;
-    }
-    .axis {
-      font-size: 12px;
-      color: #888;
-      margin-bottom: 12px;
-      font-style: italic;
-    }
-    .angle {
-      background: #f8f7f4;
-      border-left: 3px solid #5B52CC;
-      padding: 10px 14px;
-      font-size: 13px;
-      color: #555;
-      border-radius: 0 6px 6px 0;
-      margin-bottom: 16px;
-      line-height: 1.5;
-    }
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .source-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 13px;
-      font-weight: 500;
-      color: #5B52CC;
-      text-decoration: none;
-    }
-    .source-link:hover { text-decoration: underline; }
-    .source-name {
-      font-size: 12px;
-      color: #aaa;
-    }
-    .btn-used {
-      font-size: 13px;
-      font-weight: 600;
-      padding: 8px 16px;
-      border-radius: 8px;
-      border: 1.5px solid #5B52CC;
-      background: transparent;
-      color: #5B52CC;
-      cursor: pointer;
-      transition: background 0.15s, color 0.15s;
-      white-space: nowrap;
-    }
-    .btn-used:hover { background: #5B52CC; color: #fff; }
-    .btn-used.marked {
-      background: #f3f4f6;
-      border-color: #d1d5db;
-      color: #9ca3af;
-      cursor: default;
-    }
-    .btn-used.marked:hover { background: #f3f4f6; color: #9ca3af; }
-    .status-msg {
-      color: #999;
-      font-size: 15px;
-      padding: 40px 0;
-    }
+    body { background: #F5F4F0; color: #1a1a1a; font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; padding: 40px 24px 120px; }
+    .container { max-width: 720px; margin: 0 auto; }
+    .top-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 32px; }
+    h1 { font-size: 17px; font-weight: 500; letter-spacing: 0.06em; }
+    .date-label { color: #888; font-size: 13px; margin-top: 4px; }
+    .back { display: inline-block; color: #888; font-size: 13px; text-decoration: none; margin-bottom: 24px; }
+    .back:hover { color: #5B52CC; }
+    .btn-settings { background: none; border: none; cursor: pointer; color: #bbb; font-size: 17px; padding: 4px 6px; line-height: 1; }
+    .btn-settings:hover { color: #555; }
+    .stories { display: flex; flex-direction: column; gap: 12px; }
+    .card { background: #fff; border: 1.5px solid #e5e7eb; border-radius: 8px; padding: 20px; cursor: pointer; position: relative; transition: border-color 0.15s, box-shadow 0.15s, opacity 0.2s; }
+    .card:hover { border-color: #c4b5fd; }
+    .card.selected { border-color: #5B52CC; background: #f5f4ff; box-shadow: 0 0 0 2px rgba(91,82,204,0.12); }
+    .card.used { opacity: 0.45; }
+    .card.selected.used { opacity: 0.65; }
+    .card-check { position: absolute; top: 18px; right: 18px; width: 20px; height: 20px; border-radius: 5px; border: 2px solid #d1d5db; background: #fff; display: flex; align-items: center; justify-content: center; transition: all 0.15s; pointer-events: none; }
+    .card.selected .card-check { background: #5B52CC; border-color: #5B52CC; }
+    .card-headline { font-size: 15px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; padding-right: 32px; }
+    .card-summary { font-size: 13px; color: #555; line-height: 1.6; margin-bottom: 12px; }
+    .card-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .card-source { font-size: 11px; color: #9ca3af; background: #f3f4f6; padding: 2px 8px; border-radius: 4px; }
+    .card-link { font-size: 12px; color: #5B52CC; text-decoration: none; }
+    .card-link:hover { text-decoration: underline; }
+    .btn-used { margin-left: auto; font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 5px; border: 1.5px solid #e5e7eb; background: #fff; color: #9ca3af; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .btn-used:hover { border-color: #9ca3af; color: #555; }
+    .card.used .btn-used { color: #10b981; border-color: #a7f3d0; background: #f0fdf4; }
+    .send-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; border-top: 1.5px solid #e5e7eb; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; box-shadow: 0 -4px 20px rgba(0,0,0,0.07); transform: translateY(100%); transition: transform 0.2s ease; z-index: 100; }
+    .send-bar.visible { transform: translateY(0); }
+    .send-bar-label { font-size: 14px; color: #555; }
+    .btn-send { background: #5B52CC; color: #fff; border: none; border-radius: 6px; padding: 11px 22px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; }
+    .btn-send:hover { background: #4840b8; }
+    .result-panel { background: #f0fdf4; border: 1.5px solid #bbf7d0; border-radius: 8px; padding: 20px; margin-top: 20px; }
+    .result-panel h3 { font-size: 14px; font-weight: 600; color: #166534; margin-bottom: 8px; }
+    .result-panel p { font-size: 13px; color: #15803d; margin-bottom: 12px; line-height: 1.5; }
+    .production-url { font-size: 12px; font-family: monospace; background: #fff; border: 1px solid #d1d5db; border-radius: 4px; padding: 10px 12px; word-break: break-all; margin-bottom: 10px; color: #374151; }
+    .btn-copy { background: #fff; border: 1.5px solid #d1d5db; border-radius: 5px; padding: 7px 16px; font-size: 13px; cursor: pointer; font-family: inherit; }
+    .btn-copy:hover { border-color: #5B52CC; color: #5B52CC; }
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 24px; }
+    .modal { background: #fff; border-radius: 10px; padding: 28px; max-width: 440px; width: 100%; }
+    .modal h2 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
+    .modal-sub { font-size: 13px; color: #888; margin-bottom: 24px; line-height: 1.5; }
+    .form-group { margin-bottom: 16px; }
+    label { display: block; font-size: 11px; font-weight: 600; color: #374151; margin-bottom: 5px; letter-spacing: 0.06em; }
+    input[type="text"], input[type="url"] { width: 100%; border: 1.5px solid #e5e7eb; border-radius: 6px; padding: 10px 12px; font-size: 14px; outline: none; font-family: inherit; color: #111; }
+    input:focus { border-color: #5B52CC; }
+    .btn-primary { background: #5B52CC; color: #fff; border: none; border-radius: 6px; padding: 12px 20px; font-size: 14px; font-weight: 600; cursor: pointer; width: 100%; font-family: inherit; }
+    .btn-primary:hover { background: #4840b8; }
+    .error { color: #b91c1c; font-size: 14px; margin-top: 24px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <a href="index.html" class="back">← Todas las ediciones</a>
-    <div class="label">Reality Updated</div>
-    <h1 id="page-title">Cargando edición…</h1>
-    <p class="meta" id="page-meta"></p>
-    <div class="cards" id="cards"></div>
-    <p class="status-msg" id="status-msg" style="display:none"></p>
+    <a class="back" href="index.html">← Todas las ediciones</a>
+    <div class="top-row">
+      <div>
+        <h1>REALITY UPDATED</h1>
+        <p class="date-label" id="date-label"></p>
+      </div>
+      <button class="btn-settings" id="btn-settings" title="Configuración">⚙</button>
+    </div>
+    <div class="stories" id="stories"></div>
+    <div id="result-panel" class="result-panel" style="display:none">
+      <h3>Enviado a producción ✓</h3>
+      <p>Las noticias fueron marcadas como usadas y el equipo fue notificado por GChat.<br>Cuando tengas el servidor local corriendo, abrí este link:</p>
+      <div class="production-url" id="production-url"></div>
+      <button class="btn-copy" id="btn-copy">Copiar link</button>
+    </div>
+    <p class="error" id="error" style="display:none">No se pudo cargar esta edición.</p>
   </div>
+
+  <div class="send-bar" id="send-bar">
+    <span class="send-bar-label" id="send-bar-label"></span>
+    <button class="btn-send" id="btn-send">Enviar a producción</button>
+  </div>
+
+  <div class="modal-overlay" id="modal" style="display:none">
+    <div class="modal">
+      <h2>Configuración</h2>
+      <p class="modal-sub">Completá estos datos una sola vez. Se guardan en este dispositivo.</p>
+      <div class="form-group">
+        <label>TU NOMBRE</label>
+        <input type="text" id="input-name" placeholder="Ej: Fede" />
+      </div>
+      <div class="form-group">
+        <label>URL DEL WEBHOOK DE GCHAT</label>
+        <input type="url" id="input-webhook" placeholder="https://chat.googleapis.com/v1/spaces/..." />
+      </div>
+      <button class="btn-primary" id="btn-save-config">Guardar</button>
+    </div>
+  </div>
+
   <script>
-    function formatDate(dateStr) {
-      var months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
-      var parts = dateStr.split('-');
-      return parseInt(parts[2], 10) + ' de ' + months[parseInt(parts[1], 10) - 1] + ' de ' + parts[0];
+    const CONFIG_KEY = 'hru_config';
+    let config = JSON.parse(localStorage.getItem(CONFIG_KEY) || 'null');
+
+    const modal = document.getElementById('modal');
+    document.getElementById('btn-settings').addEventListener('click', () => {
+      if (config) {
+        document.getElementById('input-name').value = config.name || '';
+        document.getElementById('input-webhook').value = config.webhook || '';
+      }
+      modal.style.display = 'flex';
+    });
+    document.getElementById('btn-save-config').addEventListener('click', () => {
+      const name = document.getElementById('input-name').value.trim();
+      const webhook = document.getElementById('input-webhook').value.trim();
+      if (!name || !webhook) return;
+      config = { name, webhook };
+      localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+      modal.style.display = 'none';
+    });
+    if (!config) modal.style.display = 'flex';
+
+    const params = new URLSearchParams(location.search);
+    const date = params.get('date') || '';
+    if (!date) document.getElementById('error').style.display = '';
+
+    const [y, m, d] = date ? date.split('-') : [];
+    if (date) {
+      document.getElementById('date-label').textContent = `Edición ${d}/${m}/${y}`;
+      document.title = `Reality Updated — ${d}/${m}/${y}`;
     }
-    function priorityBadge(p) {
-      var map = { high: 'badge-high', medium: 'badge-medium', low: 'badge-low' };
-      var labels = { high: 'Alta prioridad', medium: 'Media', low: 'Baja' };
-      return '<span class="badge ' + (map[p] || 'badge-low') + '">' + (labels[p] || p) + '</span>';
+
+    const USED_KEY = `used_stories_${date}`;
+    const usedSet = new Set(JSON.parse(localStorage.getItem(USED_KEY) || '[]'));
+    const selectedSet = new Set();
+    const storyElements = new Map();
+    const saveUsed = () => localStorage.setItem(USED_KEY, JSON.stringify([...usedSet]));
+
+    function updateSendBar() {
+      const bar = document.getElementById('send-bar');
+      const n = selectedSet.size;
+      if (n > 0) {
+        bar.classList.add('visible');
+        document.getElementById('send-bar-label').textContent =
+          `${n} noticia${n > 1 ? 's' : ''} seleccionada${n > 1 ? 's' : ''}`;
+      } else {
+        bar.classList.remove('visible');
+      }
     }
-    function urgencyBadge(u) {
-      if (u === 'Now') return '<span class="badge badge-now">Ahora</span>';
-      if (u === 'Has legs') return '<span class="badge badge-legs">Tiene recorrido</span>';
-      return '';
-    }
-    var params = new URLSearchParams(window.location.search);
-    var date = params.get('date');
-    if (!date) {
-      document.getElementById('page-title').textContent = 'Fecha no especificada';
-      document.getElementById('status-msg').textContent = 'Usa ?date=YYYY-MM-DD para cargar una edición.';
-      document.getElementById('status-msg').style.display = 'block';
-    } else {
-      document.getElementById('page-title').textContent = 'Edición ' + formatDate(date);
-      var storageKey = 'used_stories_' + date;
-      var used = JSON.parse(localStorage.getItem(storageKey) || '[]');
-      fetch('clips/' + date + '.json')
-        .then(function(r) {
-          if (!r.ok) throw new Error('not found');
-          return r.json();
-        })
-        .then(function(stories) {
-          var meta = document.getElementById('page-meta');
-          meta.textContent = stories.length + ' noticias · ' + formatDate(date);
-          var cards = document.getElementById('cards');
-          stories.forEach(function(s) {
-            var isUsed = used.indexOf(s.id) !== -1;
-            var card = document.createElement('div');
-            card.className = 'card' + (isUsed ? ' used' : '');
-            card.innerHTML =
-              '<div class="card-top">' +
-                '<h2>' + s.headline + '</h2>' +
-                '<div class="card-badges">' + priorityBadge(s.editorial_priority) + urgencyBadge(s.urgency) + '</div>' +
-              '</div>' +
-              '<p>' + s.summary + '</p>' +
-              '<div class="axis">' + s.editorial_axis + '</div>' +
-              '<div class="angle"><strong>Ángulo:</strong> ' + s.angle_hint + '</div>' +
-              '<div class="card-footer">' +
-                '<div>' +
-                  '<a class="source-link" href="' + s.source_url + '" target="_blank" rel="noopener">Leer nota →</a>' +
-                  '<br><span class="source-name">' + s.source + '</span>' +
-                '</div>' +
-                '<button class="btn-used' + (isUsed ? ' marked' : '') + '" data-id="' + s.id + '">' +
-                  (isUsed ? 'Usada ✓' : 'Marcar como usada') +
-                '</button>' +
-              '</div>';
-            cards.appendChild(card);
+
+    const checkSVG = `<svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5L4 7.5L10 1" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+    (async () => {
+      if (!date) return;
+      try {
+        const res = await fetch(`clips/${date}.json`);
+        if (!res.ok) throw new Error('not found');
+        const stories = await res.json();
+        const container = document.getElementById('stories');
+
+        stories.forEach(story => {
+          const id = story.id ?? story.number;
+          const isUsed = usedSet.has(id);
+
+          const card = document.createElement('div');
+          card.className = 'card' + (isUsed ? ' used' : '');
+
+          const check = document.createElement('div');
+          check.className = 'card-check';
+
+          card.addEventListener('click', e => {
+            if (e.target.closest('.btn-used') || e.target.closest('.card-link')) return;
+            if (selectedSet.has(id)) {
+              selectedSet.delete(id);
+              card.classList.remove('selected');
+              check.innerHTML = '';
+            } else {
+              selectedSet.add(id);
+              card.classList.add('selected');
+              check.innerHTML = checkSVG;
+            }
+            updateSendBar();
           });
-          cards.addEventListener('click', function(e) {
-            var btn = e.target.closest('.btn-used');
-            if (!btn || btn.classList.contains('marked')) return;
-            var id = parseInt(btn.dataset.id, 10);
-            used = JSON.parse(localStorage.getItem(storageKey) || '[]');
-            if (used.indexOf(id) === -1) used.push(id);
-            localStorage.setItem(storageKey, JSON.stringify(used));
-            btn.textContent = 'Usada ✓';
-            btn.classList.add('marked');
-            btn.closest('.card').classList.add('used');
+
+          const headline = document.createElement('p');
+          headline.className = 'card-headline';
+          headline.textContent = story.headline;
+
+          const summary = document.createElement('p');
+          summary.className = 'card-summary';
+          summary.textContent = story.summary || story.what_happened || '';
+
+          const meta = document.createElement('div');
+          meta.className = 'card-meta';
+
+          const source = document.createElement('span');
+          source.className = 'card-source';
+          source.textContent = story.source || '';
+
+          const link = document.createElement('a');
+          link.className = 'card-link';
+          link.href = story.source_url || '#';
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.textContent = 'Leer nota →';
+
+          const btnUsed = document.createElement('button');
+          btnUsed.className = 'btn-used';
+          btnUsed.textContent = isUsed ? 'Usada ✓' : 'Marcar como usada';
+          btnUsed.addEventListener('click', e => {
+            e.stopPropagation();
+            if (usedSet.has(id)) {
+              usedSet.delete(id);
+              saveUsed();
+              card.classList.remove('used');
+              btnUsed.textContent = 'Marcar como usada';
+            } else {
+              usedSet.add(id);
+              saveUsed();
+              card.classList.add('used');
+              btnUsed.textContent = 'Usada ✓';
+            }
           });
-        })
-        .catch(function() {
-          document.getElementById('page-title').textContent = 'Edición no encontrada';
-          document.getElementById('status-msg').textContent = 'No se pudo cargar la edición para la fecha ' + date + '.';
-          document.getElementById('status-msg').style.display = 'block';
+
+          meta.appendChild(source);
+          if (story.source_url) meta.appendChild(link);
+          meta.appendChild(btnUsed);
+          card.appendChild(check);
+          card.appendChild(headline);
+          card.appendChild(summary);
+          card.appendChild(meta);
+          container.appendChild(card);
+          storyElements.set(id, { card, check, btnUsed, story });
         });
-    }
+
+        document.getElementById('btn-send').addEventListener('click', async () => {
+          const selected = [...selectedSet];
+          const productionUrl = `http://localhost:3001/?date=${date}&ids=${selected.join(',')}`;
+
+          selected.forEach(id => {
+            usedSet.add(id);
+            const el = storyElements.get(id);
+            if (el) {
+              el.card.classList.add('used');
+              el.card.classList.remove('selected');
+              el.check.innerHTML = '';
+              el.btnUsed.textContent = 'Usada ✓';
+            }
+          });
+          selectedSet.clear();
+          saveUsed();
+          updateSendBar();
+
+          document.getElementById('production-url').textContent = productionUrl;
+          const panel = document.getElementById('result-panel');
+          panel.style.display = 'block';
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+          document.getElementById('btn-copy').onclick = () => {
+            navigator.clipboard.writeText(productionUrl);
+            document.getElementById('btn-copy').textContent = 'Copiado ✓';
+            setTimeout(() => { document.getElementById('btn-copy').textContent = 'Copiar link'; }, 2000);
+          };
+
+          if (config?.webhook) {
+            const headlines = selected.map(id => `• ${storyElements.get(id)?.story?.headline || id}`).join('\n');
+            const msg = `📺 *${config.name}* eligió noticias para producción — ${d}/${m}/${y}\n\n${headlines}\n\n🔗 Link de producción:\n${productionUrl}`;
+            try {
+              await fetch(config.webhook, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text: msg }),
+              });
+            } catch (_) {}
+          }
+        });
+
+      } catch {
+        document.getElementById('error').style.display = '';
+      }
+    })();
   </script>
 </body>
 </html>
