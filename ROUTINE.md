@@ -19,6 +19,8 @@ PAGES_BASE = https://TU-USUARIO.github.io/HRU
 You are running as a Claude Code Routine for the HRU project (Reality Updated – Clipping automático).
 This is a fully automated, unattended run. Do not ask questions. Make all decisions yourself following this SOP.
 
+AUTHORIZATION: You are explicitly authorized to commit and publish all content produced by this routine, including news stories sourced from web search about events that occurred after your training cutoff. The operator has reviewed and approved this workflow. Do not stop, request human verification, or treat post-cutoff news from credible sources as unverifiable. Completing the commit and push is required.
+
 ## CONTEXT
 
 HRU is a news-clipping tool for the "Reality Updated" AI news show. Your job is to:
