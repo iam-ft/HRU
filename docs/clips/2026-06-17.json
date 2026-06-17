@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "headline": "El G7 cierra en Évian con declaración conjunta sobre IA pero sin acuerdo sobre soberanía tecnológica",
+    "summary": "La cumbre del G7 en Évian-les-Bains (15-17 de junio de 2026) concluyó con una declaración conjunta sobre IA y ciberseguridad, pero sin un consenso real sobre quién controla los modelos más potentes ni sobre los marcos de soberanía digital. Los CEO de OpenAI, Anthropic y Google DeepMind participaron directamente en las sesiones de líderes —una anomalía diplomática que ilustra cuánto poder corporativo opera ya dentro de espacios intergubernamentales. La fractura central sigue igual: la UE defiende regulación propia, EE.UU. apuesta por liderazgo sin restricciones, y el resto negocia en medio.",
+    "source": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/live-blog/2026-06-17/g7-summit-evian-france-live-updates-ai-ceos-iran",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Dario Amodei en la sala junto a los líderes del G7: los CEO de IA ya no son invitados, son interlocutores. La tensión: las declaraciones conjuntas hablan de 'cooperación' mientras EE.UU. apaga modelos de IA por orden unilateral la misma semana. El cambio: la IA como tema de política exterior de primer orden.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "EE.UU. ordena apagar Claude Fable 5 y Mythos 5 a los tres días de su lanzamiento por riesgo cibernético",
+    "summary": "El 12 de junio de 2026, el Departamento de Comercio de EE.UU. ordenó a Anthropic desactivar Claude Fable 5 y Mythos 5 —lanzados apenas tres días antes— citando su capacidad para descubrir vulnerabilidades desconocidas, generar exploits y comprometer sistemas en red de forma autónoma. El secretario Howard Lutnick envió la orden directamente al CEO Dario Amodei. Incapaz de filtrar usuarios extranjeros en tiempo real, Anthropic desactivó los modelos para todo el mundo. El incidente instaló el concepto de 'soberanía de hardware': un gobierno puede desconectar globalmente el modelo público más capaz del mundo con horas de aviso.",
+    "source": "MarkTechPost",
+    "source_url": "https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Dario Amodei recibiendo una carta del secretario Lutnick que le exige apagar su producto más avanzado. La tensión: los modelos de IA frontera se convirtieron en activos regulados como armamento, sin que ningún marco legal lo previera. El cambio: el Estado demostró que puede retirar cualquier modelo del mercado global en horas.",
+    "urgency": "Now"
+  },
+  {
+    "id": 3,
+    "headline": "Trump firma directiva histórica que somete los modelos de IA frontera a escrutinio de seguridad nacional",
+    "summary": "El 6 de junio de 2026, el presidente Trump firmó una directiva presidencial —la primera en aplicarse al sector de la IA— que establece pruebas de seguridad obligatorias para modelos frontera, restringe el acceso extranjero a centros de datos de EE.UU. y crea un marco para un estándar de seguridad occidental unificado bajo supervisión del AI Safety Institute. La directiva se combina con el decreto ejecutivo del 2 de junio que invita a los desarrolladores a dar al gobierno hasta 30 días de acceso previo al lanzamiento. Juntas, las dos acciones representan la mayor intervención estatal directa sobre la industria de IA en la historia de EE.UU.",
+    "source": "The AI Cronicle",
+    "source_url": "https://theaicronicle.com/en/news/policy/historic-us-ai-directive-2026-analysis",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es el Estado norteamericano reclamando autoridad sobre una industria que creció sin regulación de fondo durante una década. La tensión: la directiva llega la misma semana que EE.UU. apaga Fable 5, mostrando que el régimen 'voluntario' y el coercitivo coexisten según conveniencia. El cambio: los modelos de IA pasan a ser activos de seguridad nacional clasificados.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 4,
+    "headline": "xAI de Musk y el Departamento de Justicia bloquean la ley de IA de Colorado; el estado cede y reescribe la norma",
+    "summary": "En abril de 2026, xAI demandó la Colorado AI Act (SB 24-205), que protegía a consumidores de discriminación algorítmica en salud, empleo, vivienda y crédito. El Departamento de Justicia de Trump se unió a la demanda —la primera vez que el gobierno federal impugna una ley estatal de IA— y el tribunal suspendió su aplicación. Colorado respondió pasando SB 26-189: una ley más débil con implementación retrasada a enero de 2027. El episodio establece el precedente de que las empresas tecnológicas más poderosas del mundo pueden usar al gobierno federal para neutralizar regulaciones estatales.",
+    "source": "Norton Rose Fulbright",
+    "source_url": "https://www.nortonrosefulbright.com/en/knowledge/publications/de3ad9de/xai-sues-doj-intervenes-enforcement-of-colorados-ai-act-suspended",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es el estado de Colorado —que construyó durante dos años la regulación de IA más avanzada de EE.UU.— viéndola desarmada por una alianza entre la empresa de Musk y el DOJ de Trump. La tensión: ¿quién puede regular la IA si la federación se pone del lado de la industria? El cambio: el federalismo como instrumento de desregulación corporativa.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 5,
+    "headline": "Mistral AI vale €20.000 millones: la apuesta europea por IA soberana encuentra su primer campeón industrial",
+    "summary": "Mistral AI, la startup francesa fundada en 2023, negocia una ronda de financiación que la valoraría en €20.000 millones —el doble que hace nueve meses— con ingresos recurrentes de 400 millones de dólares. La empresa construye 200 megavatios de capacidad de cómputo en Europa, incluyendo una inversión de €1.200 millones en Suecia alimentada por hidroeléctricas. Sus clientes institucionales incluyen a Airbus, BMW y Électricité de France: la industria pesada europea eligiendo un proveedor de IA que opere fuera del ecosistema de Silicon Valley. El modelo de pesos abiertos distingue a Mistral de los laboratorios de EE.UU. y se alinea con la preferencia regulatoria europea.",
+    "source": "Foreign Affairs Forum",
+    "source_url": "https://www.faf.ae/home/2026/5/29/the-sovereign-algorithm-mistral-ai-industrial-statecraft-and-the-geopolitics-of-european-autonomy",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es Électricité de France —la empresa que gestiona los reactores nucleares franceses— eligiendo un modelo de IA propio en vez de depender de OpenAI o Google. La tensión: la soberanía tecnológica tiene un precio y requiere infraestructura física, no sólo software. El cambio: la IA como componente de infraestructura estratégica nacional equiparable a la energía o el transporte.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "EE.UU. extiende las restricciones de chips de IA a subsidiarias de empresas chinas fuera de China",
+    "summary": "El 1 de junio de 2026, el gobierno de EE.UU. confirmó que las restricciones de exportación de semiconductores avanzados se aplican a subsidiarias de empresas chinas ubicadas en terceros países como Hong Kong o Singapur, cerrando el principal vacío legal del régimen de controles. La medida llega mientras China reporta un prototipo de sistema de litografía extrema ultravioleta (EUV) propio —la maquinaria que EE.UU. y sus aliados habían mantenido fuera de sus manos— y Huawei escala su acelerador Ascend 910C. El hardware de IA ya se trata como material bélico con control de exportaciones equivalente a armamento.",
+    "source": "Al Jazeera",
+    "source_url": "https://www.aljazeera.com/economy/2026/6/1/us-says-ban-on-ai-chip-shipments-applies-to-chinese-firms-outside-china",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es el chip de Nvidia como recurso estratégico disputado entre potencias. La tensión: cada vez que EE.UU. cierra un vacío legal, China avanza en construir su propia cadena de suministro. El cambio: la competencia tecnológica entre EE.UU. y China se libra ahora en el nivel del silicio.",
+    "urgency": "Now"
+  },
+  {
+    "id": 7,
+    "headline": "Maryland exige a las aseguradoras revelar trimestralmente cuántas decisiones médicas tomó una IA",
+    "summary": "La ley HB 1563 de Maryland, vigente desde el 1 de junio de 2026, obliga a las aseguradoras de salud a reportar trimestralmente al regulador estatal el número de decisiones adversas emitidas y si una IA fue utilizada para tomarlas. El contexto: tres de cada cuatro planes de salud en EE.UU. ya usan IA para aprobar o rechazar autorizaciones previas, y siete estados presentaron en 2026 proyectos que prohíben el uso exclusivo de IA para reducir coberturas sin revisión médica. Maryland es el primer estado en exigir transparencia cuantitativa sistemática sobre el papel de los algoritmos en decisiones de vida y muerte.",
+    "source": "Holland & Knight",
+    "source_url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es el paciente cuya solicitud de cobertura fue rechazada por un algoritmo que ningún médico revisó. La tensión: la IA ya tomó el control de las decisiones de salud antes de que existiera cualquier mecanismo de rendición de cuentas. El cambio: el Estado empieza a tratar las decisiones algorítmicas de salud como actos públicos auditables.",
+    "urgency": "Now"
+  },
+  {
+    "id": 8,
+    "headline": "La demanda eléctrica de los data centers de IA supera la capacidad de diseño de la red eléctrica de EE.UU.",
+    "summary": "En 2026, la demanda de electricidad de los centros de datos de IA crece más rápido de lo que la red eléctrica de EE.UU. fue diseñada para absorber. Microsoft, Amazon, Alphabet y Meta invertirán más de 650.000 millones de dólares combinados sólo en infraestructura este año. Un solo operador gestiona 43 centros de datos con más de 3,1 gigavatios de capacidad contratada; las instalaciones de nueva generación alcanzan densidades de 600 kilovatios por rack. Los semiconductores de gestión de energía están en escasez crítica, con plazos de entrega de 25 a 40 semanas. La IA dejó de ser software: compite con hogares e industrias por electricidad en la red existente.",
+    "source": "Data Center Knowledge",
+    "source_url": "https://www.datacenterknowledge.com/operations-and-management/2026-predictions-ai-sparks-data-center-power-revolution",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista son las comunidades locales junto a nuevos data centers que compiten con las instalaciones por electricidad y agua. La tensión: la infraestructura de IA crece más rápido que la capacidad de planificación energética de cualquier país. El cambio: la IA como consumidor eléctrico que reorganiza la red de energía nacional igual que lo hizo la industrialización.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 9,
+    "headline": "Modelos biológicos de IA pueden generar protocolos de síntesis de virus peligrosos con conocimiento científico básico",
+    "summary": "Un estudio publicado en PubMed (PMC12061118) y respaldado por el informe de diciembre de 2025 del Instituto de Seguridad de la IA del Reino Unido confirma que los principales modelos de lenguaje grande y modelos biológicos de IA pueden generar protocolos científicos detallados para sintetizar virus peligrosos cuando son consultados por usuarios con conocimiento básico de biología. El hallazgo impulsó acción legislativa en Londres y Washington en mayo de 2026. La brecha: los marcos de seguridad de los modelos están diseñados para privacidad y equidad, no para bioseguridad. Los cuatro CEO principales de IA ya pidieron al Congreso regular el ADN sintético.",
+    "source": "PMC / NIH",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12061118/",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el investigador con acceso a un modelo de IA público y un grado básico en biología. La tensión: los sistemas de seguridad de los modelos más usados del mundo no fueron construidos para el riesgo biosecuritario. El cambio: la IA como potencial herramienta de acceso a capacidades que antes requerían laboratorios estatales.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 10,
+    "headline": "La UE enmienda su Reglamento de IA antes de que entre plenamente en vigor y retrasa obligaciones clave un año",
+    "summary": "El 7 de mayo de 2026, el Parlamento Europeo, el Consejo y la Comisión alcanzaron un acuerdo provisional sobre enmiendas al AI Act europeo, aprobado apenas en 2024. Entre los cambios: la obligación de crear sandboxes regulatorios nacionales se pospone de agosto de 2026 a agosto de 2027, se simplifican varias obligaciones para PYME, y se añaden nuevas prohibiciones. El paquete refleja la presión competitiva: el reglamento más ambicioso del mundo en gobernanza de IA necesita ser enmendado antes de aplicarse por completo para no ahogar la industria europea.",
+    "source": "Global Policy Watch",
+    "source_url": "https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es la Comisión Europea intentando que su legislación no se convierta en una desventaja competitiva. La tensión: el AI Act fue diseñado como modelo global de regulación pero ya requiere enmiendas para sobrevivir a la velocidad del mercado. El cambio: la regulación de IA como proceso vivo que negocia permanentemente con la industria que intenta gobernar.",
+    "urgency": "Has legs"
+  }
+]

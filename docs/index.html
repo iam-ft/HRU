@@ -1,134 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reality Updated — Archivo de ediciones</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: #F5F4F0;
-      color: #1a1a1a;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    header {
-      margin-bottom: 48px;
-    }
-    .label {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #5B52CC;
-      margin-bottom: 12px;
-    }
-    h1 {
-      font-size: 28px;
-      font-weight: 700;
-      color: #1a1a1a;
-      line-height: 1.2;
-    }
-    h1 span {
-      color: #5B52CC;
-    }
-    .subtitle {
-      margin-top: 10px;
-      font-size: 15px;
-      color: #666;
-    }
-    .editions-list {
-      list-style: none;
-    }
-    .editions-list li {
-      border-top: 1px solid #e0dfd9;
-    }
-    .editions-list li:last-child {
-      border-bottom: 1px solid #e0dfd9;
-    }
-    .editions-list a {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 18px 4px;
-      text-decoration: none;
-      color: #1a1a1a;
-      font-size: 16px;
-      font-weight: 500;
-      transition: color 0.15s;
-    }
-    .editions-list a:hover {
-      color: #5B52CC;
-    }
-    .editions-list a .arrow {
-      color: #5B52CC;
-      font-size: 18px;
-      opacity: 0.6;
-      transition: opacity 0.15s, transform 0.15s;
-    }
-    .editions-list a:hover .arrow {
-      opacity: 1;
-      transform: translateX(4px);
-    }
-    .empty {
-      color: #999;
-      font-size: 15px;
-      padding: 32px 0;
-    }
-    .loading {
-      color: #999;
-      font-size: 14px;
-      padding: 24px 0;
-    }
+    body { background: #F5F4F0; color: #1a1a1a; font-family: system-ui, -apple-system, 'Inter', sans-serif; min-height: 100vh; padding: 40px 24px; }
+    .container { max-width: 600px; margin: 0 auto; }
+    h1 { font-size: 18px; font-weight: 600; letter-spacing: 0.04em; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 13px; margin-bottom: 36px; }
+    .edition-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .edition-list a { display: block; background: #fff; border: 1.5px solid #e5e7eb; border-radius: 8px; padding: 14px 20px; text-decoration: none; color: #111; font-size: 15px; font-weight: 500; transition: border-color 0.15s; }
+    .edition-list a:hover { border-color: #5B52CC; color: #5B52CC; }
+    .empty { color: #888; font-size: 14px; margin-top: 24px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="label">Reality Updated</div>
-      <h1>Archivo de <span>ediciones</span></h1>
-      <p class="subtitle">Clipping automático de noticias de IA y tecnología para el equipo editorial.</p>
-    </header>
-    <main>
-      <p class="loading" id="status">Cargando ediciones…</p>
-      <ul class="editions-list" id="list"></ul>
-    </main>
+    <h1>REALITY UPDATED</h1>
+    <p class="subtitle">Archivo de ediciones de clipping</p>
+    <ul class="edition-list" id="list"></ul>
+    <p class="empty" id="empty" style="display:none">No hay ediciones disponibles aún.</p>
   </div>
   <script>
-    function formatDate(dateStr) {
-      const [y, m, d] = dateStr.split('-');
-      return d + '/' + m + '/' + y;
-    }
-    fetch('clips/index.json')
-      .then(function(r) {
-        if (!r.ok) throw new Error('fetch failed');
-        return r.json();
-      })
-      .then(function(editions) {
-        var status = document.getElementById('status');
-        var list = document.getElementById('list');
-        if (!editions || editions.length === 0) {
-          status.textContent = 'No hay ediciones disponibles aún.';
-          return;
-        }
-        status.style.display = 'none';
-        editions.forEach(function(ed) {
-          var li = document.createElement('li');
-          var a = document.createElement('a');
-          a.href = 'clip-viewer.html?date=' + ed.date;
-          a.innerHTML = '<span>' + formatDate(ed.date) + '</span><span class="arrow">→</span>';
+    (async () => {
+      try {
+        const res = await fetch('clips/index.json');
+        if (!res.ok) throw new Error('fetch failed');
+        const editions = await res.json();
+        const list = document.getElementById('list');
+        if (!editions.length) { document.getElementById('empty').style.display = ''; return; }
+        editions.forEach(({ date }) => {
+          const [y, m, d] = date.split('-');
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = `clip-viewer.html?date=${date}`;
+          a.textContent = `${d}/${m}/${y}`;
           li.appendChild(a);
           list.appendChild(li);
         });
-      })
-      .catch(function() {
-        document.getElementById('status').textContent = 'No hay ediciones disponibles aún.';
-      });
+      } catch {
+        document.getElementById('empty').style.display = '';
+      }
+    })();
   </script>
 </body>
 </html>
