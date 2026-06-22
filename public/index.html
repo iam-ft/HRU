@@ -6,7 +6,7 @@
   <title>Reality Updated</title>
   <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -127,8 +127,13 @@ function ClippingView({ onScriptReady, onClipDate, initialStories }) {
   const [mode, setMode] = useState(initialStories?.length ? 'loaded' : 'idle');
 
   useEffect(() => {
-    if (initialStories?.length) onClipDate(new Date());
-  }, []);
+    if (initialStories?.length) {
+      setStories(initialStories);
+      setSelected(new Set(initialStories.map(s => s.id ?? s.number)));
+      setMode('loaded');
+      onClipDate(new Date());
+    }
+  }, [initialStories]);
 
   const runClipping = async () => {
     setLoading(true); setError(null);
