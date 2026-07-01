@@ -34,6 +34,24 @@ The working directory is the root of this repository.
 
 ---
 
+## STEP 0 — Configure git credentials
+
+The environment variable `GITHUB_TOKEN` contains the GitHub Personal Access Token needed to clone and push this repository. Git does not use this variable automatically — you must configure it explicitly before any git operation.
+
+Run this command first:
+```bash
+git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+```
+
+If the working directory is empty (no `.git` folder), clone the repository:
+```bash
+git clone https://${GITHUB_TOKEN}@github.com/iam-ft/HRU.git .
+```
+
+Do not proceed to the next step until git is configured and the repository is present.
+
+---
+
 ## STEP 1 — Determine today's date
 
 Get today's date in YYYY-MM-DD format. You will use this as FECHA throughout this SOP.
