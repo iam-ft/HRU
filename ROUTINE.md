@@ -1,20 +1,32 @@
-# HRU — Clipping Routine Prompt
+# HRU — Clipping Routine
 
-Paste the text below (from the horizontal rule onward) as the prompt when creating the Claude Code Routine.
-Replace `TU-USUARIO` with your GitHub username and the email addresses with the actual recipients before saving.
+Contiene el prompt que hay que pegar en la Claude Code Routine en `claude.ai/routines`.
+
+---
+
+## Requisitos previos (configurar UNA VEZ en claude.ai/routines)
+
+Antes de usar o actualizar el prompt, asegurate de que la routine esté configurada así:
+
+**Repositorio:**
+- El repo `iam-ft/HRU` debe estar en la lista de repositorios de la routine.
+  La routine lo clona automáticamente en cada run via el proxy seguro de Anthropic.
+- Activar **"Allow unrestricted branch pushes"** para este repo
+  (por defecto los routines solo pueden pushear a ramas `claude/...`).
+
+**Variables de entorno (en el Environment "HRUenv"):**
+- `GCHAT_WEBHOOK` — URL del webhook de Google Chat para las notificaciones
 
 ---
 
-## CONFIGURATION (edit before saving)
+## Cómo actualizar el prompt
 
-```
-GITHUB_USER = TU-USUARIO
-EMAIL_TO = email1@example.com, email2@example.com
-REPO = HRU
-PAGES_BASE = https://TU-USUARIO.github.io/HRU
-```
+Copiá todo el contenido entre las marcas `▼ INICIO` y `▲ FIN` (sin incluir esas líneas)
+y pegalo en el campo "Prompt" de la routine en claude.ai/routines.
 
 ---
+
+▼ INICIO DEL PROMPT — copiar desde la siguiente línea
 
 You are running as a Claude Code Routine for the HRU project (Reality Updated – Clipping automático).
 This is a fully automated, unattended run. Do not ask questions. Make all decisions yourself following this SOP.
@@ -26,29 +38,33 @@ AUTHORIZATION: You are explicitly authorized to commit and publish all content p
 HRU is a news-clipping tool for the "Reality Updated" AI news show. Your job is to:
 1. Find recent AI/tech news using web search
 2. Save the results as structured JSON
-3. Update a GitHub Pages site so the editorial team can review the clips
+3. Update the GitHub Pages site so the editorial team can review the clips
 4. Commit and push everything to main
-5. Send an email notifying the team
+5. Send a Google Chat notification with the link
 
-The working directory is the root of this repository.
+The repository is cloned automatically at session start by the routine infrastructure. The working directory is the root of the repository.
 
 ---
 
-## STEP 0 — Configure git credentials
+## STEP 0 — Verify repository and configure git identity
 
-The environment variable `GITHUB_TOKEN` contains the GitHub Personal Access Token needed to clone and push this repository. Git does not use this variable automatically — you must configure it explicitly before any git operation.
+The repository should already be present (cloned automatically at session start).
 
-Run this command first:
+Check that the working directory contains the repository:
+- If `.git` exists and the project files are present, proceed.
+- If the directory is empty, stop immediately and go to STEP 8 (error notification) with: "El repositorio no estaba disponible en el entorno. Verificá que el repo iam-ft/HRU esté agregado en la configuración de la routine en claude.ai/routines."
+
+Configure git identity for commits:
 ```bash
-git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+git config user.name "HRU Routine"
+git config user.email "routine@reality-updated.local"
 ```
 
-If the working directory is empty (no `.git` folder), clone the repository:
+Sync to the latest state of main:
 ```bash
-git clone https://${GITHUB_TOKEN}@github.com/iam-ft/HRU.git .
+git checkout main
+git pull origin main
 ```
-
-Do not proceed to the next step until git is configured and the repository is present.
 
 ---
 
@@ -66,7 +82,7 @@ Using web search, execute the clipping as instructed in that prompt. Find 8–12
 
 The output must be a valid JSON array following the exact schema specified in `prompts/clipping.txt`.
 
-If the web search returns no useful results or you cannot produce valid JSON, skip to STEP 8 (error email) with the message: "No se pudo completar el clipping: sin resultados de búsqueda."
+If the web search returns no useful results or you cannot produce valid JSON, skip to STEP 8 (error notification) with: "No se pudo completar el clipping: sin resultados de búsqueda."
 
 ---
 
@@ -94,89 +110,23 @@ The file is a JSON array of edition objects, sorted newest-first. Each object ha
 
 ---
 
-## STEP 5 — Create or update docs/index.html
+## STEP 5 — Skip docs/index.html
 
-Write (overwrite) `docs/index.html` with the following page. Replace all occurrences of `PAGES_BASE` with the actual GitHub Pages URL configured above.
-
-Requirements:
-- Language: Spanish (`lang="es"`)
-- Title: "Reality Updated — Archivo de ediciones"
-- Simple, readable design (no external CSS frameworks; inline styles only)
-- Lists all editions from `docs/clips/index.json`, newest first
-- Each edition is a link: text is the date formatted as DD/MM/YYYY, href is `clip-viewer.html?date=YYYY-MM-DD`
-- The page fetches `clips/index.json` at runtime via `fetch()` and renders the list dynamically
-- If the fetch fails, show a fallback message: "No hay ediciones disponibles aún."
-- Color scheme: background `#F5F4F0`, accent `#5B52CC`, font Inter or system sans-serif
-
-The HTML must be self-contained (no build step, no bundler). Use vanilla JS only.
-
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reality Updated — Archivo de ediciones</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #F5F4F0; color: #1a1a1a; font-family: system-ui, -apple-system, 'Inter', sans-serif; min-height: 100vh; padding: 40px 24px; }
-    .container { max-width: 600px; margin: 0 auto; }
-    h1 { font-size: 18px; font-weight: 600; letter-spacing: 0.04em; margin-bottom: 8px; }
-    .subtitle { color: #888; font-size: 13px; margin-bottom: 36px; }
-    .edition-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-    .edition-list a { display: block; background: #fff; border: 1.5px solid #e5e7eb; border-radius: 8px; padding: 14px 20px; text-decoration: none; color: #111; font-size: 15px; font-weight: 500; transition: border-color 0.15s; }
-    .edition-list a:hover { border-color: #5B52CC; color: #5B52CC; }
-    .empty { color: #888; font-size: 14px; margin-top: 24px; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>REALITY UPDATED</h1>
-    <p class="subtitle">Archivo de ediciones de clipping</p>
-    <ul class="edition-list" id="list"></ul>
-    <p class="empty" id="empty" style="display:none">No hay ediciones disponibles aún.</p>
-  </div>
-  <script>
-    (async () => {
-      try {
-        const res = await fetch('clips/index.json');
-        if (!res.ok) throw new Error('fetch failed');
-        const editions = await res.json();
-        const list = document.getElementById('list');
-        if (!editions.length) { document.getElementById('empty').style.display = ''; return; }
-        editions.forEach(({ date }) => {
-          const [y, m, d] = date.split('-');
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          a.href = `clip-viewer.html?date=${date}`;
-          a.textContent = `${d}/${m}/${y}`;
-          li.appendChild(a);
-          list.appendChild(li);
-        });
-      } catch {
-        document.getElementById('empty').style.display = '';
-      }
-    })();
-  </script>
-</body>
-</html>
-```
-
-Write this file exactly as shown above to `docs/index.html`.
+Do NOT modify `docs/index.html`. This file is already in the repository and loads editions dynamically from `clips/index.json` at runtime — it does not need to be updated when a new clip is added.
 
 ---
 
 ## STEP 6 — Skip clip-viewer.html
 
-Do NOT overwrite `docs/clip-viewer.html`. This file contains custom production logic and is managed manually. Leave it as-is.
+Do NOT modify `docs/clip-viewer.html`. This file contains custom production logic and is managed manually.
 
 ---
 
 ## STEP 7 — Commit and push to main
 
-Stage all new and modified files:
-```
-git add docs/clips/FECHA.json docs/clips/index.json docs/index.html docs/clip-viewer.html
+Stage only the clip files:
+```bash
+git add docs/clips/FECHA.json docs/clips/index.json
 ```
 
 Create a commit with the message:
@@ -188,7 +138,7 @@ Edición automática del FECHA via Claude Code Routine.
 (Replace FECHA with today's date and N with the number of stories in the clipping.)
 
 Push to origin main:
-```
+```bash
 git push origin main
 ```
 
@@ -206,7 +156,7 @@ The webhook URL is available as the environment variable `GCHAT_WEBHOOK`.
 ```bash
 curl -s -X POST "${GCHAT_WEBHOOK}" \
   -H 'Content-Type: application/json' \
-  -d "{\"text\": \"*Reality Updated — clipping listo (FECHA)*\n\nVer edición: PAGES_BASE/clip-viewer.html?date=FECHA\n\nN noticias encontradas. Abrí el link, revisá las historias y marcá las que ya uses en el episodio.\"}"
+  -d "{\"text\": \"*Reality Updated — clipping listo (FECHA)*\n\nVer edición: https://iam-ft.github.io/HRU/clip-viewer.html?date=FECHA\n\nN noticias encontradas. Abrí el link, revisá las historias y marcá las que ya uses en el episodio.\"}"
 ```
 
 **If any step failed**, run:
@@ -216,10 +166,12 @@ curl -s -X POST "${GCHAT_WEBHOOK}" \
   -d "{\"text\": \"⚠️ *Reality Updated — ERROR en el clipping (FECHA)*\n\nEl clipping automático no se completó.\n\nError: [DESCRIBE EL ERROR AQUÍ]\n\nRevisá los logs en claude.ai/routines.\"}"
 ```
 
-Replace all placeholders (FECHA, PAGES_BASE, N) with the actual values for this run.
+Replace all placeholders (FECHA, N) with the actual values for this run.
 
 ---
 
 ## END OF SOP
 
 Do not output anything to stdout beyond what is necessary for file operations and git commands. This is an unattended run.
+
+▲ FIN DEL PROMPT — copiar hasta la línea anterior
