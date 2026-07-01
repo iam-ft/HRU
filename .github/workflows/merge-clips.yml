@@ -1,0 +1,25 @@
+name: Merge daily clip to main
+
+on:
+  push:
+    branches:
+      - claude/daily-clip
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Merge claude/daily-clip into main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout main
+          git pull origin main
+          git merge origin/claude/daily-clip --ff-only
+          git push origin main

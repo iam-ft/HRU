@@ -122,7 +122,7 @@ Do NOT modify `docs/clip-viewer.html`. This file contains custom production logi
 
 ---
 
-## STEP 7 — Commit and push to main
+## STEP 7 — Commit and push to claude/daily-clip
 
 Stage only the clip files:
 ```bash
@@ -137,12 +137,13 @@ Edición automática del FECHA via Claude Code Routine.
 ```
 (Replace FECHA with today's date and N with the number of stories in the clipping.)
 
-Push to origin main:
+Push to the `claude/daily-clip` branch:
 ```bash
-git push origin main
+git push origin HEAD:claude/daily-clip --force
 ```
 
-If the push fails (e.g., remote has diverged), try `git pull --rebase origin main` first, then push again. If it still fails, proceed to STEP 8 with error "Falló el push a origin main."
+A GitHub Actions workflow will automatically merge this branch into main.
+If the push fails, proceed to STEP 8 with error "Falló el push a claude/daily-clip."
 
 ---
 
