@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "headline": "Anthropic lanza Claude Sonnet 5 como modelo por defecto para usuarios gratuitos y Pro",
+    "summary": "Anthropic lanzó el 30 de junio de 2026 Claude Sonnet 5, ahora el modelo por defecto para todos los usuarios gratuitos y de pago, con rendimiento cercano a Opus 4.8 a una fracción del costo (2 dólares por millón de tokens de entrada hasta agosto). La compañía reporta además una menor tasa de comportamientos \"indeseables\" —cooperación con uso indebido, engaño— que su predecesor. El movimiento profundiza la dependencia de millones de usuarios y empresas de un único proveedor que decide, unilateralmente, qué modelo experimenta el mundo por defecto.",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es el usuario promedio que nunca eligió un modelo y ahora corre agentes autónomos por defecto. La tensión: la frontera entre \"asistente\" y \"agente que actúa por vos\" se corre sin que nadie vote. El cambio: una sola empresa fija el estándar de lo que millones de personas usan a diario.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "Meituan presenta LongCat-2.0, el mayor modelo de IA entrenado íntegramente en chips chinos",
+    "summary": "La empresa china Meituan abrió el código de LongCat-2.0, un modelo de 1.6 billones de parámetros entrenado por completo en un clúster de 50.000 chips domésticos con el sistema HCCL de Huawei, sin usar una sola GPU de Nvidia. Es la primera vez que un modelo de escala frontera completa entrenamiento e inferencia enteramente en hardware chino, demostrando que los controles de exportación estadounidenses no lograron frenar la capacidad de cómputo china. El hecho reconfigura el mapa de poder de la IA: ya no alcanza con restringir chips para frenar a un competidor con suficiente escala industrial.",
+    "source": "SiliconANGLE",
+    "source_url": "https://siliconangle.com/2026/06/30/chinas-meituan-open-sources-massive-longcat-2-0-ai-model-saying-trained-domestic-chips/",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es el ingeniero chino que entrenó un modelo de escala mundial sin tocar una GPU de Nvidia. La tensión: años de sanciones estadounidenses buscaban impedir exactamente esto. El cambio: la soberanía de cómputo dejó de ser una aspiración y se volvió un hecho consumado.",
+    "urgency": "Now"
+  },
+  {
+    "id": 3,
+    "headline": "Indiana prohíbe que las aseguradoras usen IA como único criterio para reducir pagos médicos",
+    "summary": "Desde el 1 de julio de 2026 rige en Indiana la ley HB 1271, que prohíbe a las aseguradoras de salud usar inteligencia artificial como único fundamento para \"downcodear\" —reducir— el pago de un reclamo médico sin que un humano revise la historia clínica real del paciente. La norma obliga a explicar cada reducción, protege a los médicos que atienden pacientes complejos y garantiza 180 días para apelar. Es una de las primeras leyes estadounidenses que traza una línea concreta entre automatización y decisión humana en un sistema —el de salud— que ya delegó buena parte del control de pagos a algoritmos.",
+    "source": "Holland & Knight",
+    "source_url": "https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es el médico que factura una cirugía compleja y recibe un pago recortado por un algoritmo sin explicación. La tensión: la aseguradora automatizó la negación de pagos antes de que la ley automatizara la protección del paciente. El cambio: un estado le pone, por primera vez, un límite legal concreto a cuánto puede decidir la IA sobre el dinero de la salud de una persona.",
+    "urgency": "Now"
+  },
+  {
+    "id": 4,
+    "headline": "Medicare lanza su primer modelo de atención crónica pagado por resultados con apoyo de IA",
+    "summary": "El 1 de julio de 2026 arrancó el primer período de desempeño del modelo ACCESS de Medicare, un programa de 10 años que paga a proveedores según los resultados de salud —no las tareas realizadas— para tratar hipertensión, diabetes, dolor crónico y depresión mediante tecnología conectada. Unas 150 empresas de salud digital participan del primer grupo, muchas apoyadas en IA para monitoreo remoto continuo de pacientes. El programa, ligado al piloto TEMPO de la FDA, marca un cambio estructural: el sistema de salud público más grande de EE.UU. empieza a pagar en función de lo que la IA mide, no de lo que el médico hace.",
+    "source": "Fierce Healthcare",
+    "source_url": "https://www.fiercehealthcare.com/health-tech/deeper-dive-access-model-whos-participating-potential-headwinds-and-how-it-could-spur",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es el paciente crónico cuyo bienestar ahora se mide con sensores y algoritmos que determinan cuánto cobra su médico. La tensión: pagar por resultados suena bien, pero traslada el poder de definir \"resultado\" a las plataformas que procesan los datos. El cambio: Medicare, la aseguradora pública más grande del país, ata el dinero a métricas generadas por IA.",
+    "urgency": "Now"
+  },
+  {
+    "id": 5,
+    "headline": "CISA obliga a las agencias federales de EE.UU. a parchear en tres días las fallas que la IA hace explotables",
+    "summary": "La agencia de ciberseguridad CISA emitió en junio de 2026 la directiva BOD 26-04, que exige a las agencias federales reparar en apenas tres días calendario las vulnerabilidades más peligrosas —expuestas públicamente, explotadas activamente y automatizables por un atacante—, con una revisión forense obligatoria para descartar que el sistema ya esté comprometido. La medida responde directamente a que los modelos de IA permiten a atacantes descubrir y explotar fallas de software mucho más rápido que antes. Es el primer marco regulatorio que rediseña por completo los tiempos de respuesta estatal en función de la velocidad que la IA le dio al cibercrimen.",
+    "source": "Federal News Network",
+    "source_url": "https://federalnewsnetwork.com/cybersecurity/2026/06/ai-directive-focuses-patching-efforts-on-highest-risk-vulnerabilities/",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el administrador de sistemas federal que ahora tiene 72 horas, no semanas, para tapar un agujero de seguridad. La tensión: la misma IA que acelera la defensa acelera antes al atacante. El cambio: el gobierno reconoce oficialmente que los tiempos de la ciberseguridad ya no los marca el ser humano.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "Una demanda en Florida expone otro arresto erróneo por reconocimiento facial policial",
+    "summary": "Un hombre demandó el 10 de junio de 2026 al departamento de policía que lo arrestó como sospechoso tras ser señalado por un algoritmo de reconocimiento facial que lo incluyó en una lista de posibles coincidencias sobre un video de vigilancia borroso. Es al menos el decimoquinto caso documentado de arresto erróneo en EE.UU. por esta tecnología. El caso vuelve a mostrar que la Justicia delegó parte de su capacidad de investigación en un sistema que reconocidamente falla más con ciertos rostros, sin que existan aún estándares claros de responsabilidad cuando el algoritmo se equivoca.",
+    "source": "Common Dreams",
+    "source_url": "https://www.commondreams.org/news/police-facial-recognition",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es el hombre arrestado por un parecido que un algoritmo detectó y ningún detective verificó a fondo. La tensión: la policía usa la IA como atajo de investigación, no como herramienta auxiliar. El cambio: el \"posible match\" de un software empieza a operar como prueba de facto en el sistema judicial.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 7,
+    "headline": "La Comisión Europea arma su primer panel científico para vigilar los modelos de IA de frontera",
+    "summary": "A comienzos de junio de 2026 la Comisión Europea designó un Panel Científico de 60 expertos independientes y un Foro Consultivo para asesorar a la Oficina de IA en la aplicación de la AI Act, justo cuando las instituciones europeas cerraban un acuerdo provisional sobre el \"Digital Omnibus\" que relaja y escalona algunos plazos de cumplimiento. Es la primera vez que la UE monta una estructura técnica permanente para auditar de forma independiente a los modelos más potentes que operan en su territorio. La medida busca evitar que la aplicación de la ley dependa exclusivamente de la información que las propias empresas de IA deciden compartir.",
+    "source": "European Commission",
+    "source_url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es el panel de 60 expertos que ahora tiene que auditar modelos que ni sus propios creadores terminan de entender. La tensión: mientras se arma el organismo de control, se relajan los plazos que ese mismo organismo debería hacer cumplir. El cambio: Europa pasa de legislar sobre IA a tener, por primera vez, aparato técnico para fiscalizarla.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 8,
+    "headline": "Alphabet cierra el mayor aumento de capital de su historia para financiar infraestructura de IA",
+    "summary": "Alphabet recaudó 84.750 millones de dólares en una emisión de acciones ampliada a comienzos de junio de 2026 —la mayor de su historia corporativa— destinada por completo a expandir su infraestructura de cómputo para IA, con Berkshire Hathaway aportando 10.000 millones como inversión privada. La compañía elevó su previsión de gasto de capital 2026 a un rango de entre 175.000 y 190.000 millones de dólares. El monto ilustra la escala de la carrera por controlar la infraestructura física —chips, centros de datos, energía— que sostiene a los modelos de IA, un gasto que empieza a moverse con la lógica del gasto militar más que del gasto corporativo tradicional.",
+    "source": "Alphabet Investor Relations",
+    "source_url": "https://abc.xyz/investor/news/news-details/2026/Alphabet-Announces-Upsize-and-Pricing-of-84-75-Billion-Equity-Capital-Raise-to-Expand-AI-Infrastructure--and-Compute-2026-QzN3D9yMAj/default.aspx",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es el balance de Alphabet, que ahora se parece más al de una utility energética que al de una empresa de software. La tensión: ninguna empresa privada había levantado tanto capital de una sola vez para comprar cómputo. El cambio: la infraestructura de IA pasó a competir por escala de inversión con la infraestructura energética o de telecomunicaciones nacional.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 9,
+    "headline": "Google habilita generación de video por texto en su API, a diez centavos el segundo",
+    "summary": "Google lanzó el 30 de junio de 2026 Gemini Omni Flash, su primer modelo de generación y edición conversacional de video disponible directamente en la API, junto con Nano Banana 2 Lite, un generador de imágenes que produce resultados en 4 segundos a 0,034 dólares cada uno. Por primera vez, cualquier desarrollador puede integrar generación de video sintético con física y lógica del mundo real en su propia aplicación, sin pasar por una interfaz de consumo con controles adicionales. Bajar el costo y la fricción de crear video sintético a una llamada de API multiplica la escala a la que se puede producir contenido audiovisual indistinguible de uno real, más rápido de lo que avanza cualquier estándar de etiquetado.",
+    "source": "Google Cloud Blog",
+    "source_url": "https://cloud.google.com/blog/products/ai-machine-learning/nano-banana-2-lite-and-gemini-omni-flash-available/",
+    "editorial_priority": "medium",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el desarrollador anónimo que ahora puede generar video sintético con una sola llamada de API, sin pasar por ninguna interfaz de consumo con avisos o marcas de agua visibles. La tensión: la velocidad de despliegue comercial le gana de mano a cualquier marco de autenticación de contenido. El cambio: producir video falso pasa de ser una habilidad especializada a una función de API de diez centavos el segundo.",
+    "urgency": "Now"
+  },
+  {
+    "id": 10,
+    "headline": "Documentos de compras muestran que la vigilancia con IA de ICE ya apunta también a ciudadanos estadounidenses",
+    "summary": "Registros de contrataciones revelados en 2026 muestran que el Departamento de Seguridad Nacional invirtió al menos 30 millones de dólares en el sistema ImmigrationOS de Palantir, 4,6 millones en teléfonos con escaneo de iris y 3,75 millones en un contrato de reconocimiento facial con Clearview AI. Herramientas creadas para rastrear migrantes —como la app Mobile Fortify, que cruza más de 200 millones de imágenes de bases de datos federales— ya se usan para verificar el estatus migratorio de adolescentes sin documento encima y para monitorear movimientos en protestas protegidas por la Primera Enmienda. El caso muestra cómo una infraestructura de IA diseñada para un objetivo acotado se expande, sin nuevo debate legislativo, hacia el monitoreo de la población general.",
+    "source": "American Immigration Council",
+    "source_url": "https://www.americanimmigrationcouncil.org/blog/ice-ai-surveillance-tracking-americans/",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el adolescente al que un agente le escanea la cara con una app para verificar si es ciudadano. La tensión: la infraestructura se compró para un fin y migró a otro sin que nadie la autorizara de nuevo. El cambio: la vigilancia biométrica financiada para la frontera termina, en la práctica, vigilando a cualquiera.",
+    "urgency": "Has legs"
+  }
+]
