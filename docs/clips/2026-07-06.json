@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "headline": "UN opens first global summit on AI governance in Geneva",
+    "summary": "The UN's Global Dialogue on AI Governance convened all 193 member states in Geneva on July 6-7, alongside the WSIS Forum and the AI for Good summit, in the first intergovernmental attempt to coordinate rules for the technology. Scientists co-chairing the parallel Scientific Panel on AI warned that control over advanced systems 'is not guaranteed,' pushing sovereignty and safety to the top of the agenda.",
+    "source": "UN News",
+    "source_url": "https://news.un.org/en/story/2026/07/1167862",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization",
+    "angle_hint": "The protagonist is the international system itself trying to catch up to a technology already reorganizing power; the tension is 193 governments needing consensus while a handful of labs and states already hold the capability.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "OpenAI floats handing the US government a 5% stake in the company",
+    "summary": "Days after the White House delayed the rollout of GPT-5.6 over national-security concerns, Sam Altman proposed giving Washington a 5% equity stake in OpenAI, modeled on Alaska's sovereign oil fund, and suggested every major US AI lab do the same. The move blurs the line between private AI labs and the state just as OpenAI prepares a planned IPO.",
+    "source": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization",
+    "angle_hint": "Altman as protagonist trying to trade equity for regulatory peace; the tension is whether a government stake buys oversight or buys silence.",
+    "urgency": "Now"
+  },
+  {
+    "id": 3,
+    "headline": "Tesla caps employees' AI spending at $200 a week, but exempts Musk's Grok",
+    "summary": "Starting July 6, Tesla requires employees to get sign-off before spending more than $200 a week on AI tools, after software engineers ran up thousands of dollars in token costs monthly. The cap excludes xAI's Grok, even though internal reporting shows many Tesla engineers actually prefer Anthropic's Claude.",
+    "source": "Electrek / The Information",
+    "source_url": "https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/",
+    "editorial_priority": "medium",
+    "editorial_axis": "Autonomy vs. dependency",
+    "angle_hint": "A finance manager auditing token bills becomes the flashpoint for how thoroughly white-collar work now depends on metered AI access, and how leadership steers that dependency toward in-house tools.",
+    "urgency": "Now"
+  },
+  {
+    "id": 4,
+    "headline": "Anthropic starts its own drug discovery lab, betting AI can move medicine nobody funds",
+    "summary": "Anthropic launched Claude Science, a platform wiring Claude into 60+ lab tools, and simultaneously opened an internal drug-discovery program targeting neglected and rare diseases that pharma companies don't prioritize commercially. It follows April's $400 million acquisition of Coefficient Bio and puts Anthropic in direct competition with Google and OpenAI for control of AI-driven biotech.",
+    "source": "MIT Technology Review",
+    "source_url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+    "editorial_priority": "high",
+    "editorial_axis": "Biological or material expansion",
+    "angle_hint": "A neglected-disease researcher who finally gets a well-funded partner — but that partner is a frontier AI lab deciding, on its own commercial logic, which diseases count as worth curing.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 5,
+    "headline": "HHS turns ChatGPT loose on five years of state Medicaid audits, with no appeals process",
+    "summary": "Under its new AERO program, the Department of Health and Human Services is using generative AI to scan audit histories from all 50 states and any grantee spending over $1 million in federal funds, hunting an estimated $100-200 billion in annual fraud and waste. States that receive an AI-flagged deficiency letter get no stated error rate, no appeals process, and no deadline before HHS can withhold payments or move to debar them.",
+    "source": "Becker's Hospital Review / Tech Times",
+    "source_url": "https://www.techtimes.com/articles/319108/20260625/hhs-deploys-chatgpt-medicaid-audits-no-error-rate-no-appeals-no-deadline.htm",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions",
+    "angle_hint": "A state Medicaid director receiving an AI-generated compliance letter with no human explanation attached — due process itself starting to run on a model's output.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "The AI boom's real bottleneck turns out to be the power grid, not chips",
+    "summary": "Utility mergers hit $203.6 billion in the first five months of 2026 — already topping all of 2025 — as companies race to secure electricity for AI data centers, with NextEra's $66.8 billion bid for Dominion Energy the largest deal. Nearly a third of tracked US AI campuses now need gigawatt-scale power, and up to half of planned 2026 capacity may slip to 2028 because grid interconnection queues, not GPU supply, now set the pace.",
+    "source": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-07-03/ai-factories-create-winners-and-losers-in-power-equipment-market",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure",
+    "angle_hint": "A utility executive fielding hyperscaler requests for gigawatts they don't have — AI's dependency chain running through transformers and transmission lines as much as silicon.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 7,
+    "headline": "Meta admits its AI restructuring hasn't paid off yet, months after cutting 8,000 jobs",
+    "summary": "Meta laid off roughly 8,000 employees this spring to fund its AI pivot, redirecting thousands more into new AI-focused teams, but executives now acknowledge the reorganization is progressing slower than promised. Zuckerberg says results should materialize within three to six months, while the company still plans leadership changes after conceding the overhaul was 'miscalculated.'",
+    "source": "Outlook Business",
+    "source_url": "https://www.outlookbusiness.com/news/zuckerberg-says-meta-miscalculated-ai-overhaul-after-8000-job-cuts",
+    "editorial_priority": "medium",
+    "editorial_axis": "Autonomy vs. dependency",
+    "angle_hint": "A laid-off Meta employee whose job was cut for an AI bet that isn't yet paying off — the human cost of restructuring around a capability still being built.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 8,
+    "headline": "Four in five US doctors now use AI on the job, double the rate three years ago",
+    "summary": "A new American Medical Association survey finds 81% of physicians now use AI in their practice, up from 38% in 2023, with average use cases per doctor doubling as well. Confidence is rising, but 88% of physicians also worry the technology could erode the diagnostic skills of medical students and residents who lean on it too early.",
+    "source": "American Medical Association",
+    "source_url": "https://www.ama-assn.org/press-center/ama-press-releases/ama-ai-usage-among-doctors-doubles-confidence-technology-grows",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions",
+    "angle_hint": "A resident who has never diagnosed without an AI second opinion — the moment medical judgment itself starts to assume the model is there.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 9,
+    "headline": "Every public school in Ohio must now have a written AI policy",
+    "summary": "As of July 1, Ohio's House Bill 96 requires all traditional public school districts, community schools, and STEM schools to adopt a formal artificial intelligence policy, using the state's model framework or an equivalent of their own. The mandate covers privacy, cheating, and bullying use cases but stops short of requiring AI literacy teaching, leaving actual classroom practice to each district.",
+    "source": "Axios Columbus / Ohio Department of Education",
+    "source_url": "https://www.axios.com/local/columbus/2025/07/08/ohio-schools-require-ai-policy-artificial-intelligence",
+    "editorial_priority": "medium",
+    "editorial_axis": "Transformation of real institutions",
+    "angle_hint": "A school board scrambling to write a policy for a technology already in students' pockets — institutions legislating catch-up after the fact.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 10,
+    "headline": "White House pushes to override state AI laws, naming Colorado's discrimination rule as its target",
+    "summary": "An executive order directs the Justice Department to form a litigation task force against state AI regulation and ties federal broadband funding to states dropping enforcement, explicitly citing Colorado's AI Act as forcing models to 'produce false results.' Colorado lawmakers pre-empted the fight themselves, gutting the law's algorithmic-discrimination duty and delaying its effective date to January 2027 — a preview of how federal pressure is already reshaping state oversight before it can take effect.",
+    "source": "White & Case / Colorado General Assembly",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization",
+    "angle_hint": "A Colorado state legislator watching a consumer-protection law get hollowed out under federal threat before it ever took effect — sovereignty over AI rules moving from states to the White House in real time.",
+    "urgency": "Has legs"
+  }
+]
