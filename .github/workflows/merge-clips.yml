@@ -1,4 +1,4 @@
-name: Merge daily clip to main and deploy
+name: Merge daily clip to main
 
 on:
   push:
@@ -7,12 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   merge:
@@ -30,45 +24,3 @@ jobs:
           git pull origin main
           git merge origin/claude/daily-clip --ff-only
           git push origin main
-
-  deploy:
-    needs: merge
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: https://iam-ft.github.io/HRU
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/
-
-      - name: Deploy to GitHub Pages (attempt 1)
-        id: deploy1
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
-
-      - name: Wait before retry
-        if: steps.deploy1.outcome == 'failure'
-        run: sleep 30
-
-      - name: Deploy to GitHub Pages (attempt 2)
-        id: deploy2
-        if: steps.deploy1.outcome == 'failure'
-        uses: actions/deploy-pages@v4
-        continue-on-error: true
-
-      - name: Wait before retry
-        if: steps.deploy2.outcome == 'failure'
-        run: sleep 60
-
-      - name: Deploy to GitHub Pages (attempt 3)
-        if: steps.deploy2.outcome == 'failure'
-        uses: actions/deploy-pages@v4
