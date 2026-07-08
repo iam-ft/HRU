@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "headline": "Modelos chinos de IA ganan terreno en empresas de EE.UU. mientras el Congreso abre una investigación",
+    "summary": "Según datos de OpenRouter citados por CNBC, la porción de tokens que empresas estadounidenses consumen en modelos chinos se mantiene por encima del 30% cada semana desde febrero, con picos de 46%, frente a un promedio de apenas 11% en los doce meses previos, impulsada por precios entre 60% y 90% más bajos que los de OpenAI y Anthropic. Dos comités de la Cámara de Representantes investigan formalmente el fenómeno y señalan a DeepSeek, MiniMax y Moonshot AI por conducir campañas coordinadas para extraer capacidades de sistemas estadounidenses.",
+    "source": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/07/08/chinese-ai-models-probe-us-lawmakers.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es el responsable de tecnología de una empresa mediana que migra sus cargas de trabajo de Claude o GPT a DeepSeek para ahorrar costos. La tensión: el ahorro inmediato choca con la desconfianza oficial hacia infraestructura controlada por un rival geopolítico. El cambio: la ventaja de precio empieza a mover trabajo empresarial estadounidense hacia modelos chinos pese a las advertencias de Washington.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "Illinois promulga la ley de IA más estricta de EE.UU., con auditorías anuales obligatorias",
+    "summary": "El gobernador JB Pritzker firmó el 6 de julio la Artificial Intelligence Safety Measures Act (SB 315), que obliga a los desarrolladores de modelos a publicar un marco de riesgo catastrófico, reportar incidentes graves en 72 horas —o 24 si hay peligro de muerte inminente— y someterse a auditorías anuales independientes, un requisito inédito en el país. La norma se inspira en leyes de California y Nueva York pero va más lejos, consolidando un bloque de estados que legisla por su cuenta mientras Washington debate si debe imponer una ley federal única.",
+    "source": "Capitol News Illinois / WTTW",
+    "source_url": "https://news.wttw.com/2026/07/06/pritzker-signs-landmark-ai-regulation-bill-aims-mitigate-risks",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es un gobernador estatal que se convierte en regulador de facto de la industria de IA a nivel nacional. La tensión: mientras la Casa Blanca litiga para anular leyes estatales como la de Colorado, otro estado redobla la apuesta con reglas más duras. El cambio: el control regulatorio de la IA en EE.UU. se fragmenta y se disputa estado por estado, no en el Congreso.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 3,
+    "headline": "Google retrasa Gemini 3.5 Pro y reconstruye el modelo desde cero tras la fuga de investigadores clave",
+    "summary": "Google DeepMind postergó el lanzamiento de Gemini 3.5 Pro al 17 de julio y descartó por completo la arquitectura de Gemini 2.5 Pro para rehacer el preentrenamiento, buscando cerrar brechas en razonamiento matemático y generación de imágenes frente a GPT-5.6 y los modelos de Anthropic. La demora coincidió con la salida de investigadores clave —incluido el coinventor del Transformer, Noam Shazeer, y el premio Nobel John Jumper— hacia OpenAI y Anthropic, un éxodo que borró unos 225.000 millones de dólares de la capitalización bursátil de Alphabet.",
+    "source": "The Agent Report / BigGo Finance",
+    "source_url": "https://the-agent-report.com/2026/07/google-gemini-3-5-pro-delayed-july-2026/",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Sundar Pichai prometiendo en el I/O un modelo que todavía no llega. La tensión: la ventaja competitiva en IA depende cada vez más de un puñado de investigadores que pueden cambiar de bando de la noche a la mañana. El cambio: el mercado empieza a valuar a los laboratorios de IA por su capital humano tanto como por su capital de cómputo.",
+    "urgency": "Now"
+  },
+  {
+    "id": 4,
+    "headline": "Washington cierra el resquicio que dejaba llegar chips de Nvidia a China vía el sudeste asiático",
+    "summary": "El Departamento de Comercio de EE.UU. confirmó que sus controles de exportación de chips avanzados aplican a cualquier empresa con matriz o sede en China, sin importar dónde esté radicada su subsidiaria, cerrando la vía que durante un año permitió a firmas chinas comprar GPUs de Nvidia y AMD a través de filiales en Singapur, Malasia y Emiratos Árabes Unidos. La medida no es retroactiva —los chips ya instalados siguen operando— pero bloquea la próxima compra, actualización o clúster.",
+    "source": "CNBC / Taipei Times",
+    "source_url": "https://www.cnbc.com/2026/05/31/us-takes-step-to-halt-nvidia-ai-chip-shipments-to-chinese-firms-outside-china.html",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es el funcionario de Comercio redactando una definición legal de \"matriz china\" para tapar un agujero que la industria explotó durante un año. La tensión: cada barrera que EE.UU. cierra genera casi de inmediato una ruta nueva. El cambio: el control de las cadenas de cómputo deja de ser una lista de países y pasa a ser una auditoría de estructuras corporativas globales.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 5,
+    "headline": "Un juez de Washington DC obliga a la fiscalía a revelar cómo Clearview AI identificó a un sospechoso",
+    "summary": "El juez Neal Kravitz ordenó a la fiscalía del Distrito de Columbia entregar más información sobre el uso del software de reconocimiento facial de Clearview AI —que cruza una base de 70.000 millones de imágenes públicas— para identificar y arrestar a un sospechoso de un tiroteo el 1 de julio. El caso reabre la pregunta de si un \"posible match\" de un algoritmo alcanza como causa probable, justo cuando Clearview busca la certificación federal FedRAMP para expandir su venta a agencias de gobierno.",
+    "source": "Biometric Update",
+    "source_url": "https://www.biometricupdate.com/202607/judge-orders-disclosure-of-clearview-ai-role-in-dc-facial-recognition-arrest",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el defensor público que pelea por ver el algoritmo que señaló a su cliente. La tensión: la policía usa el match de una IA como punto de partida de una detención, pero nadie audita públicamente cuánto se equivoca ese sistema. El cambio: la Justicia empieza, caso por caso, a exigir transparencia sobre una herramienta que ya opera como prueba de facto.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "La Casa Blanca fija para el 1 de agosto el primer examen clasificado de ciberseguridad a los modelos de IA de frontera",
+    "summary": "Bajo la orden ejecutiva de junio \"Promoting Advanced Artificial Intelligence Innovation and Security\", la NSA y la CISA deben tener listo antes del 1 de agosto un proceso clasificado para medir las capacidades cibernéticas ofensivas de los modelos más avanzados y decidir cuáles califican como \"modelo de frontera cubierto\". A cambio de someterse a esa revisión, las empresas obtienen hasta 30 días de acceso anticipado del gobierno antes de lanzar un modelo al público.",
+    "source": "Wiley Law / Skadden",
+    "source_url": "https://www.wiley.law/alert-New-AI-Executive-Order-Addresses-Frontier-Models-and-Cybersecurity-Vulnerabilities",
+    "editorial_priority": "medium",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el analista de la NSA que debe decidir, con un benchmark clasificado, si un modelo comercial es peligroso como arma cibernética. La tensión: el gobierno pide acceso anticipado a los modelos más poderosos justo cuando desconfía de sus propios laboratorios. El cambio: el Estado se arroga por primera vez la potestad de aprobar en secreto qué modelos de IA son lo bastante peligrosos como para vigilar antes del lanzamiento.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 7,
+    "headline": "La lista de despidos tecnológicos de 2026 que citan la IA como motivo llega a 120.000 puestos",
+    "summary": "El recuento de TechCrunch de despidos masivos en empresas tecnológicas que mencionaron explícitamente la IA como causa alcanzó unos 120.000 puestos en 2026, con el recorte de 4.800 empleos de Microsoft el 6 de julio —en ventas y en Xbox— como la incorporación más reciente. Oracle, Meta, Cisco, Cloudflare e Intuit figuran entre las compañías que redujeron personal mientras redirigen presupuesto hacia infraestructura y equipos de IA.",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+    "editorial_priority": "medium",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es el empleado de ventas de Microsoft despedido el mismo mes en que la empresa anuncia otro récord de gasto en IA. La tensión: la eficiencia que promete la IA se cobra primero en nómina, antes de demostrarse en productos. El cambio: \"citar a la IA\" se volvió la justificación estándar y aceptada para reestructurar una empresa entera.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 8,
+    "headline": "Una ola de calor expone que la red eléctrica de EE.UU. no da abasto para los centros de datos de IA",
+    "summary": "La ola de calor que atraviesa Estados Unidos está tensionando la red eléctrica y el suministro de agua, y PJM Interconnection —el mayor operador de red del país— pidió al Departamento de Energía que autorice ordenar a los centros de datos cambiar a generadores de respaldo en apenas 15 minutos ante una emergencia. El episodio pone en evidencia que la expansión de la IA avanza más rápido que la infraestructura eléctrica que la sostiene.",
+    "source": "Al Jazeera",
+    "source_url": "https://www.aljazeera.com/economy/2026/7/3/us-heatwave-raises-alarms-over-ai-data-centre-energy-demands",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es el operador de la red eléctrica que debe decidir, en tiempo real, si le corta la energía a un centro de datos de IA o a un barrio en plena ola de calor. La tensión: la promesa de cómputo ilimitado choca con los límites físicos de una red que no se construyó para esto. El cambio: el cuello de botella de la IA deja de ser el chip y pasa a ser el enchufe.",
+    "urgency": "Now"
+  },
+  {
+    "id": 9,
+    "headline": "Las emisiones de carbono de las grandes tecnológicas se disparan por el crecimiento de la IA",
+    "summary": "Las emisiones de Amazon subieron 16% y las de Google 18% durante 2025, según sus propios reportes de sostenibilidad, justo cuando ambas compañías reconocen que expandir cómputo para IA choca de frente con sus compromisos climáticos. Un informe de Naciones Unidas calcula que el consumo de agua ligado a la IA podría igualar hacia fin de década las necesidades domésticas básicas de 1.300 millones de personas.",
+    "source": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-07-01/big-tech-s-carbon-emissions-spike-with-runaway-growth-of-ai",
+    "editorial_priority": "high",
+    "editorial_axis": "Biological or material expansion — AI intervening on life, the body, energy, manufacturing, climate",
+    "angle_hint": "El protagonista es el equipo de sostenibilidad de Google redactando un reporte que contradice la promesa de \"cero neto\" de la propia empresa. La tensión: los mismos ejecutivos que venden la IA como solución climática son quienes más gases de efecto invernadero emiten para construirla. El cambio: la huella material de la IA deja de ser una externalidad abstracta y empieza a aparecer, en números, en los balances climáticos corporativos.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 10,
+    "headline": "Anthropic saca a Claude Fable 5 de las suscripciones y lo cobra por token, al doble del precio de su modelo insignia",
+    "summary": "Desde el 7 de julio, los usuarios Pro, Max, Team y Enterprise de Anthropic que quieran seguir usando Claude Fable 5 deben activar créditos de uso a 10 dólares por millón de tokens de entrada y 50 por millón de salida —el doble de lo que cuesta Opus 4.8 y el precio más alto que Anthropic haya puesto a un modelo de disponibilidad general—. La compañía dice que la medida es temporaria, motivada por una demanda que superó su capacidad de servidores tras el levantamiento de restricciones de exportación.",
+    "source": "BleepingComputer / Tech Times",
+    "source_url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/",
+    "editorial_priority": "medium",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es el usuario que armó su flujo de trabajo diario alrededor de un modelo que de un día para el otro empieza a cobrar por token. La tensión: la infraestructura de IA de la que dependen millones de personas y empresas puede cambiar sus reglas de precio sin aviso real. El cambio: queda expuesto que \"suscripción\" no garantiza acceso estable cuando el proveedor decide reservar su mejor modelo para quien pague más.",
+    "urgency": "Now"
+  }
+]
