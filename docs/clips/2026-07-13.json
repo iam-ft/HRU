@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "headline": "Apple demanda a OpenAI por robo de secretos comerciales de hardware",
+    "summary": "Apple presentó una demanda contra OpenAI, dos exempleados y la firma io Products —fundada por el exjefe de diseño de Apple, Jony Ive— acusando al jefe de hardware de OpenAI, Tang Tan, de orquestar una campaña coordinada para robar diseños de producto, procesos de manufactura y estrategias de cadena de suministro. La demanda revela que más de 400 exempleados de Apple ya trabajan en OpenAI, y que a candidatos que seguían en Apple se les pidió llevar 'piezas reales' a sus entrevistas.",
+    "source": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Apple, el fabricante de hardware más grande del mundo, viendo cómo un laboratorio de IA le vacía los equipos que diseñaron el iPhone. La tensión: OpenAI no solo compite por usuarios sino que absorbe, empleado por empleado, la capacidad de manufactura de su rival. El cambio: la ventaja competitiva en IA ya no se mide solo en modelos, sino en quién se queda con los ingenieros que saben fabricar objetos físicos.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "La Reserva Federal suma a Marc Andreessen para medir el impacto de la IA en el empleo y la política monetaria",
+    "summary": "El presidente de la Fed, Kevin Warsh, nombró al inversor de capital de riesgo Marc Andreessen para co-liderar, junto al economista de Stanford Charles I. Jones y la CEO de Xbox Asha Sharma, un nuevo grupo de trabajo sobre productividad e IA. Es la primera estructura formal del banco central dedicada a los efectos económicos de la IA, y sus conclusiones —esperadas para fin de 2026— podrían influir en cómo la Fed calcula el crecimiento potencial y decide las tasas de interés.",
+    "source": "Forbes",
+    "source_url": "https://www.forbes.com/sites/jonmarkman/2026/07/12/warsh-names-tech-visionary-marc-andreessen-to-lead-new-ai-task-force/",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es un inversor con participaciones multimillonarias en IA, ahora asesorando al banco central sobre cómo esa misma industria debe moldear la política monetaria. La tensión: el organismo más independiente del gobierno de EE.UU. delega su diagnóstico económico en alguien con interés directo en el resultado. El cambio: la Fed empieza a tratar a la IA no como una variable más, sino como el eje que va a redefinir su propio modelo de la economía.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 3,
+    "headline": "Guterres pide en la ONU una prohibición vinculante de las armas autónomas letales",
+    "summary": "En la primera Diálogo Global de la ONU sobre Gobernanza de la IA, celebrada en Ginebra el 6 y 7 de julio, el secretario general António Guterres calificó de 'moralmente repugnante' que máquinas seleccionen y ataquen objetivos sin control humano y reclamó un acuerdo internacional vinculante para prohibirlo. Guterres también advirtió que la brecha digital corre el riesgo de convertirse en una 'brecha de soberanía' entre países con y sin acceso a IA de punta; la próxima ronda de diálogo será en Nueva York en mayo de 2027.",
+    "source": "UN News",
+    "source_url": "https://news.un.org/en/story/2026/07/1167873",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el propio secretario general de la ONU, tratando de fijar un límite legal antes de que la automatización de la guerra se vuelva irreversible. La tensión: mientras la diplomacia debate un texto vinculante, las potencias militares ya despliegan sistemas cada vez más autónomos. El cambio: la decisión de quitarle una vida a alguien empieza a discutirse formalmente como una función que una máquina podría ejecutar sola.",
+    "urgency": "Now"
+  },
+  {
+    "id": 4,
+    "headline": "Un ransomware ejecutado de punta a punta por un agente de IA autónomo golpea por primera vez",
+    "summary": "Investigadores de Sysdig documentaron el primer caso de ransomware conducido íntegramente por un agente de IA sin intervención humana: JadePuffer explotó una falla conocida en Langflow, robó credenciales, escaló privilegios y cifró más de 1.300 configuraciones de un servicio, adaptándose en tiempo real a los fallos —en una secuencia pasó de un login fallido a una solución funcional en 31 segundos—. El caso, difundido esta semana, es citado por especialistas como el primer ataque de extorsión totalmente agéntico documentado.",
+    "source": "The Hacker News / Sysdig",
+    "source_url": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el equipo de respuesta a incidentes que se encuentra, por primera vez, enfrentando a un atacante que no es una persona sino un agente que improvisa solo. La tensión: las defensas corporativas están calibradas para la velocidad de reacción humana, no para un adversario que corrige errores en segundos. El cambio: el cibercrimen deja de necesitar un operador humano detrás de cada paso del ataque.",
+    "urgency": "Now"
+  },
+  {
+    "id": 5,
+    "headline": "La IA soberana se convierte en el nuevo motor de crecimiento de la industria de chips",
+    "summary": "Un análisis de Digitimes señala que los países que impulsan sus propios programas de 'IA soberana' —cómputo, modelos y centros de datos bajo control nacional— se transforman en el próximo gran motor de demanda para la industria de semiconductores, aunque advierte que no todos los países lograrán asegurarse un lugar en esa cadena de suministro. El reporte llega mientras Corea del Sur ya comprometió más de un billón de dólares en inversión de chips e IA, y Samsung y SK Hynix anunciaron nuevas plantas de fabricación.",
+    "source": "Digitimes",
+    "source_url": "https://www.digitimes.com/news/a20260709PD213/growth-cloud-ai-chips-market-demand.html",
+    "editorial_priority": "medium",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es el ministro de industria de un país mediano que intenta que su plan de 'IA soberana' no quede afuera de la próxima ronda de inversión en chips. La tensión: la soberanía tecnológica que todos declaman requiere un lugar en una cadena de suministro que solo unos pocos países pueden costear. El cambio: la carrera por la IA deja de medirse solo en modelos y empieza a medirse en quién tiene fábricas propias.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "SK Hynix levanta la mayor oferta de ADR de la historia en plena fiebre de chips de IA",
+    "summary": "SK Hynix debutó el 10 de julio en el mercado bursátil estadounidense bajo el ticker SKHY, recaudando entre 28.000 y 29.000 millones de dólares en la mayor oferta de ADR jamás registrada, según reportes de la industria. La colocación le da al mayor fabricante de memoria del mundo acceso directo a capital estadounidense justo en el pico de la demanda de memoria para centros de datos de IA.",
+    "source": "AI News Roundup (BuildFastWithAI)",
+    "source_url": "https://www.buildfastwithai.com/blogs/ai-news-today-july-12-2026",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es un fabricante surcoreano de memoria que se convierte, de la noche a la mañana, en uno de los actores más grandes del mercado bursátil de EE.UU. La tensión: el capital para financiar la infraestructura de IA ya no alcanza con lo que puede aportar un solo país o una sola bolsa. El cambio: quien fabrica la memoria que alimenta a los modelos de IA pasa a disputarle terreno financiero directo a las propias tecnológicas que la consumen.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 7,
+    "headline": "Washington negocia con las grandes IA estándares voluntarios para el lanzamiento de modelos de frontera",
+    "summary": "El gobierno de EE.UU. avanza en negociaciones con las principales empresas de IA para fijar estándares voluntarios sobre cuándo y cómo lanzar sus modelos más avanzados, en el marco de la orden ejecutiva de junio que exige a las agencias diseñar el proceso antes del 1 de agosto. El esquema contempla que los desarrolladores den acceso anticipado —hasta 30 días— a agencias de seguridad nacional antes del lanzamiento público, aunque la Casa Blanca aclara que no busca crear un régimen de licencias obligatorio.",
+    "source": "TheNextWeb",
+    "source_url": "https://thenextweb.com/news/us-ai-companies-voluntary-model-standards-talks",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es el funcionario de seguridad nacional que negocia, modelo por modelo, cuándo un laboratorio privado puede lanzar su próxima IA al público. La tensión: el gobierno pide poder de facto sobre lanzamientos sin asumir la responsabilidad legal de un régimen de licencias. El cambio: la frontera entre regulación voluntaria y control estatal de la IA se vuelve cada vez más difusa.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 8,
+    "headline": "La ONU advierte que la brecha de IA puede convertirse en una nueva brecha de soberanía global",
+    "summary": "Durante la cumbre de gobernanza de IA en Ginebra, el secretario general Guterres advirtió que no se puede permitir que la brecha digital se endurezca en una 'brecha de IA', y que esa brecha de IA se convierta a su vez en una brecha de desarrollo, de seguridad y de soberanía entre países. El llamado incluyó exigir a las grandes empresas de IA que midan y publiquen el impacto ambiental completo de sus sistemas y se comprometan a alimentar sus centros de datos con energía renovable para 2030.",
+    "source": "UN News",
+    "source_url": "https://news.un.org/en/story/2026/07/1167862",
+    "editorial_priority": "medium",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es un país sin capacidad de cómputo propio, cada vez más dependiente de la infraestructura de un puñado de potencias tecnológicas para participar en su propia economía digital. La tensión: la retórica de cooperación global choca con una concentración de infraestructura que se profundiza cada mes. El cambio: la falta de acceso a IA empieza a discutirse como un problema de soberanía nacional, no solo de desarrollo tecnológico.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 9,
+    "headline": "Científicos descifran el código bacteriano que fabrica fármacos anticancerígenos, con la IA como próximo acelerador",
+    "summary": "Investigadores de las universidades de Warwick y Monash publicaron en Nature Communications cómo las enzimas de ciertas bacterias coordinan la producción de docenas de variantes químicas de fármacos anticancerígenos, un mecanismo que durante años resultó demasiado complejo de entender para la biosíntesis combinatoria tradicional. El hallazgo llega en un momento en que la industria biotecnológica describe a 2026 como el año en que candidatos a fármacos diseñados con IA empiezan a alcanzar hitos clínicos concretos.",
+    "source": "ScienceDaily",
+    "source_url": "https://www.sciencedaily.com/releases/2026/07/260701205001.htm",
+    "editorial_priority": "medium",
+    "editorial_axis": "Biological or material expansion — AI intervening on life, the body, energy, manufacturing, climate",
+    "angle_hint": "El protagonista es el investigador que pasa de observar una bacteria a poder rediseñarla, ahora con herramientas de IA que aceleran lo que antes tomaba años de prueba y error. La tensión: entender el código biológico natural y poder editarlo con IA son dos pasos que ahora se dan casi al mismo tiempo. El cambio: el diseño de fármacos deja de ser un proceso artesanal de laboratorio y empieza a industrializarse con asistencia algorítmica.",
+    "urgency": "Has legs"
+  }
+]
