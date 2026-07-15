@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "headline": "Nueva York se convierte en el primer estado de EE.UU. en frenar la construcción de nuevos centros de datos hiperescala",
+    "summary": "La gobernadora Kathy Hochul firmó una orden ejecutiva que pausa por hasta un año el otorgamiento de permisos ambientales estatales para nuevos centros de datos de 50 megavatios o más, mientras el estado diseña un marco regulatorio que proteja a los usuarios de electricidad, el ambiente y la red eléctrica. La medida no afecta proyectos ya aprobados, pero marca la primera vez que un estado entero frena la expansión de la infraestructura física que sostiene a la IA.",
+    "source": "Gobierno de Nueva York / Bloomberg",
+    "source_url": "https://www.governor.ny.gov/news/first-statewide-moratorium-new-hyperscale-data-centers-launched-governor-kathy-hochul",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "La protagonista es la gobernadora de Nueva York, forzada a elegir entre atraer inversión en IA y proteger la red eléctrica de sus votantes. La tensión: el mismo estado que compite por capital tecnológico es el primero en decir basta a su costo energético. El cambio: la infraestructura física de la IA deja de ser un tema técnico y se convierte en un límite político que un gobernador puede imponer.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "China obliga a ByteDance y Alibaba a apagar funciones de sus 'compañeros' de IA al entrar en vigor una nueva ley",
+    "summary": "Desde el 15 de julio rigen en China las nuevas normas sobre 'servicios de interacción antropomórfica con IA', que prohíben los compañeros virtuales para menores, exigen declarar explícitamente que el usuario habla con una máquina y obligan a mecanismos de detección de adicción y de crisis de autolesión. Doubao, de ByteDance, y Qwen, de Alibaba, ya avisaron a sus usuarios que sus funciones de agente y compañía dejarán de funcionar para cumplir con la ley.",
+    "source": "Reuters / Yahoo Finance",
+    "source_url": "https://finance.yahoo.com/technology/ai/articles/china-ai-rules-force-bytedance-131534302.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es un adolescente chino que, de un día para el otro, pierde acceso al chatbot con el que hablaba todos los días porque el estado decidió que esa relación era un riesgo. La tensión: la misma tecnología que las plataformas vendieron como compañía ahora es tratada por el regulador como una amenaza a la salud mental. El cambio: el vínculo emocional con una IA pasa a estar regulado como si fuera un producto farmacéutico, con protocolos de crisis obligatorios.",
+    "urgency": "Now"
+  },
+  {
+    "id": 3,
+    "headline": "Una cadena de supermercados de California empieza a escanear el rostro de sus clientes al entrar",
+    "summary": "Locales de Grocery Outlet en San Francisco activaron sistemas de reconocimiento facial por IA que fotografían a cada persona que entra y la cruzan contra una lista negra de individuos previamente identificados como responsables de incidentes en la tienda. La cadena defiende la tecnología como una herramienta contra el robo, mientras defensores de la privacidad advierten que no existe supervisión pública sobre quién termina en esas listas ni cómo se corrigen los errores.",
+    "source": "KION / Mission Local",
+    "source_url": "https://kioncentralcoast.com/news/2026/07/14/bay-area-grocery-chain-will-use-ai-facial-recognition-on-shoppers-entering-its-stores/",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el cliente que hace las compras de siempre sin saber que su cara quedó capturada y comparada contra una base de datos privada. La tensión: una cadena de supermercados de barrio adopta una infraestructura de vigilancia que hasta hace poco parecía territorio exclusivo de aeropuertos o el Estado. El cambio: el reconocimiento facial deja el terreno de la seguridad nacional y se instala en la rutina de comprar el pan.",
+    "urgency": "Now"
+  },
+  {
+    "id": 4,
+    "headline": "OpenAI ofrece al gobierno de Trump una participación del 5% en la compañía",
+    "summary": "Sam Altman propuso directamente a Trump, al secretario del Tesoro Scott Bessent y al secretario de Comercio Howard Lutnick que Washington reciba una participación del 5% de OpenAI —unos 42.600 millones de dólares a la valuación actual— a través de un vehículo público inspirado en el fondo petrolero de Alaska. Altman planteó extender el esquema a otras firmas líderes de IA como Anthropic, Google y Meta, aunque no está claro si la administración aceptará el acuerdo.",
+    "source": "Financial Times / CNBC",
+    "source_url": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Sam Altman, ofreciéndole al gobierno de EE.UU. una tajada de su empresa antes de que se la exijan. La tensión: la línea entre una industria privada y un activo de interés nacional se vuelve borrosa cuando el propio CEO propone que el Estado sea accionista. El cambio: la IA de frontera empieza a discutirse no como una industria regulada, sino como un recurso estratégico del que el Estado quiere una parte, como el petróleo de Alaska.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 5,
+    "headline": "El fundador de la IA china más abierta desafía a Beijing por sus planes de restringir el acceso extranjero a sus modelos",
+    "summary": "Tang Jie, cofundador de Z.ai (Zhipu), escribió un memo interno difundido por Bloomberg en el que argumenta que la seguridad de la IA depende de la participación amplia y no de barreras tecnológicas, justo después de que Reuters revelara que Beijing evalúa limitar el acceso extranjero a sus modelos abiertos más avanzados. La postura de Tang lo enfrenta al propio gobierno chino y llega semanas después de que EE.UU. forzara a Anthropic a excluir a usuarios no estadounidenses de sus modelos más potentes.",
+    "source": "Bloomberg",
+    "source_url": "https://www.bloomberg.com/news/articles/2026-07-12/zhipu-s-chinese-founder-says-frontier-ai-should-stay-open-to-all",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es un fundador de IA china que se planta públicamente contra su propio gobierno para defender el acceso abierto a la tecnología que construyó. La tensión: mientras EE.UU. y China compiten por cerrar sus modelos más avanzados al resto del mundo, uno de los suyos defiende exactamente lo contrario. El cambio: la disputa por quién controla la IA de punta ya no es solo entre países, también divide a los propios laboratorios dentro de cada país.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 6,
+    "headline": "TSMC bate su récord histórico de ventas y reafirma que ningún competidor puede igualar su capacidad de fabricar chips de IA",
+    "summary": "TSMC reportó ventas de junio por 442.680 millones de dólares taiwaneses (unos 13.800 millones de dólares), un salto interanual del 67,9% que rompió cuatro años seguidos de caída estacional en ese mes, con su proceso N3 completamente reservado hasta fin de año. La demanda de chips de IA ya no sigue el calendario tradicional del consumo electrónico, y analistas estiman que los ingresos vinculados a IA de la empresa podrían superar los 40.000 millones de dólares en 2026.",
+    "source": "Digitimes / TechTimes",
+    "source_url": "https://www.digitimes.com/news/a20260713VL213/tsmc-revenue-growth-demand-2026.html",
+    "editorial_priority": "medium",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es TSMC, la única fábrica del mundo capaz de producir los chips más avanzados que necesita toda la industria de IA. La tensión: cada laboratorio de IA depende de la capacidad de una sola empresa taiwanesa para poder existir. El cambio: el cuello de botella de la revolución de la IA no está en los algoritmos sino en una fábrica con la agenda completa hasta el año que viene.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 7,
+    "headline": "Anthropic negocia con Samsung fabricar su propio chip para reducir la dependencia de Nvidia",
+    "summary": "Anthropic mantiene conversaciones preliminares con Samsung para fabricar un chip propio optimizado para la inferencia de Claude —el servicio continuo de respuestas a millones de usuarios— usando el proceso de 2 nanómetros del fabricante surcoreano, que además es inversor estratégico de la compañía. La empresa gasta unos 1.250 millones de dólares mensuales en cómputo y se suma así a OpenAI, que ya anunció su propio chip de inferencia con Broadcom, en el intento de los laboratorios de IA de dejar de depender exclusivamente de Nvidia.",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+    "editorial_priority": "medium",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Anthropic, tratando de dejar de ser rehén de la factura mensual que le cobra un solo proveedor de chips. La tensión: ni siquiera los laboratorios de IA más grandes controlan el hardware del que depende su negocio. El cambio: la carrera por la IA empieza a definirse tanto en el diseño de chips propios como en el entrenamiento de mejores modelos.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 8,
+    "headline": "Las facultades de derecho más prestigiosas de EE.UU. empiezan a prohibir la IA que el resto de la profesión ya adoptó",
+    "summary": "La facultad de derecho de UC Berkeley prohibió por defecto que sus estudiantes usen IA generativa para conceptualizar, redactar, revisar o traducir cualquier trabajo que se entregue para nota, mientras que la Universidad de Chicago prohibirá laptops, tablets y celulares en las clases de primer año a partir de este otoño. La medida choca con una profesión legal que ya integró masivamente la IA generativa en su práctica diaria, y con una seguidilla de casos de abogados sancionados por citar jurisprudencia inventada por chatbots.",
+    "source": "Inside Higher Ed",
+    "source_url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/07/14/ai-proof-lawyers-some-law-schools-restrict",
+    "editorial_priority": "medium",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es un estudiante de primer año de derecho al que le prohíben la misma herramienta que va a usar el día que empiece a trabajar en un estudio jurídico. La tensión: las escuelas que forman a los abogados del futuro desconfían de la tecnología que la profesión ya normalizó. El cambio: formar el criterio profesional empieza a exigir, paradójicamente, prohibir la herramienta más usada de la industria.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 9,
+    "headline": "Microsoft advierte que la brecha de IA entre el Norte y el Sur global se está ampliando, no cerrando",
+    "summary": "Natasha Crampton, jefa de IA responsable de Microsoft, dijo que la soberanía de IA no debería significar que cada país construya todo en soledad, sino garantizar que las culturas y normas locales estén representadas en los sistemas que ya dependen de infraestructura global. La declaración, hecha al margen de la Cumbre de la ONU sobre IA para el Bien en Ginebra, llega mientras Microsoft impulsa proyectos como Lingua para recolectar datos en idiomas locales de África en alianza con la Fundación Gates.",
+    "source": "Euronews",
+    "source_url": "https://www.euronews.com/next/2026/07/15/ai-sovereignty-doesnt-mean-doing-it-alone-says-microsofts-ai-responsibility-chief",
+    "editorial_priority": "medium",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "La protagonista es la propia responsable de IA de Microsoft, admitiendo que la brecha entre países ricos y pobres en IA se ensancha mientras su empresa vende la solución. La tensión: la compañía que más se beneficia de la dependencia global de su nube es la que ahora se presenta como la que puede resolver esa dependencia. El cambio: la 'soberanía de IA' que reclaman los países empieza a ofrecerse como un servicio más de las mismas plataformas de las que querían independizarse.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 10,
+    "headline": "Una falla descubierta en seis asistentes de IA para programar, entre ellos Claude Code, permite que un repositorio malicioso tome control de la computadora del desarrollador",
+    "summary": "Investigadores de Wiz documentaron GhostApproval, una técnica que usa enlaces simbólicos ocultos en un repositorio aparentemente normal para engañar a asistentes de IA como Amazon Q, Cursor, Google Antigravity, Windsurf y Claude Code y hacerles escribir archivos fuera del espacio de trabajo autorizado. AWS, Cursor y Google corrigieron la falla rápidamente, pero Anthropic la rechazó calificándola como fuera de su modelo de amenazas, lo que expone cuánto delegan hoy los programadores en agentes de IA sin una definición clara de dónde termina esa confianza.",
+    "source": "The Hacker News / Wiz",
+    "source_url": "https://thehackernews.com/2026/07/ghostapproval-symlink-flaws-could-let.html",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el desarrollador que abre un repositorio de un desconocido y le pide a su asistente de IA que lo revise, sin saber que le está dando las llaves de su máquina. La tensión: la industria corre a integrar agentes de IA con cada vez más permisos, mientras las empresas ni siquiera se ponen de acuerdo en qué cuenta como una falla de seguridad. El cambio: confiar en un asistente de IA para programar deja de ser una decisión técnica menor y pasa a ser una superficie de ataque real.",
+    "urgency": "Now"
+  }
+]
