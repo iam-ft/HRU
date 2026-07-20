@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "headline": "China lanza en Shanghái una organización rival a EE.UU. para gobernar la IA a nivel global",
+    "summary": "Xi Jinping anunció la creación de la Organización Mundial de Cooperación en IA (WAICO), con sede en Shanghái, tras conseguir la firma de 29 países fundadores, entre ellos Brasil, Indonesia, Sudáfrica y Rusia. La iniciativa china compite directamente con la coalición \"Pax Silica\" liderada por EE.UU., que ya suma 35 países, y ofrece a las naciones del Sur global 5.000 cupos de capacitación en IA para los próximos cinco años.",
+    "source": "Al Jazeera / Xinhua",
+    "source_url": "https://www.aljazeera.com/news/2026/7/17/chinas-xi-jinping-launches-new-ai-alliance-what-is-it",
+    "editorial_priority": "high",
+    "editorial_axis": "Power reorganization — who controls models, chips, data, cloud, strategic capabilities",
+    "angle_hint": "El protagonista es Xi Jinping, parado en Shanghái ofreciéndole al Sur global una alternativa a las reglas de IA que EE.UU. y Europa ya escribieron. La tensión: dos bloques geopolíticos arman en paralelo dos sistemas de gobernanza de IA incompatibles entre sí. El cambio: un país que no se sube a tiempo a alguno de los dos bloques puede quedar fuera de las reglas que van a decidir a qué IA tiene acceso.",
+    "urgency": "Now"
+  },
+  {
+    "id": 2,
+    "headline": "Un modelo chino de código abierto supera a Claude y GPT en pruebas independientes y cuesta 40% menos",
+    "summary": "Kimi K3, de la china Moonshot AI, quedó primero en el ranking de código de Arena por delante de Fable 5 de Anthropic y GPT-5.6 Sol de OpenAI, e igualó a Opus 4.8 en evaluaciones de texto general, con un costo 40% menor. Moonshot planea liberar los pesos del modelo el 27 de julio, lo que permitiría a gobiernos y empresas correrlo en sus propios servidores en vez de depender de las APIs cerradas de los laboratorios estadounidenses.",
+    "source": "Axios",
+    "source_url": "https://www.axios.com/2026/07/17/china-ai-kimi-k3-open-source-anthropic-opus",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "El protagonista es un gobierno o empresa que hasta ayer no tenía más opción que pagarle a un laboratorio estadounidense por cada consulta a un modelo de frontera. La tensión: un modelo chino gratuito y descargable empieza a rendir igual o mejor que los modelos cerrados que cobran por token. El cambio: la dependencia de una API cerrada deja de ser inevitable, y el negocio entero de la IA de frontera se repiensa alrededor de esa fuga.",
+    "urgency": "Now"
+  },
+  {
+    "id": 3,
+    "headline": "El presidente de SK Group advierte que la escasez de memoria para IA puede convertirse en un conflicto geopolítico",
+    "summary": "Chey Tae-won, presidente de SK Group, dijo en el Foro de Jeju que los principales clientes de SK Hynix ya pidieron entre 60% y 100% más memoria para IA en 2027, mientras gobiernos extranjeros empezaron a intervenir directamente para asegurarle el suministro a sus propias industrias. Chey advirtió que los precios \"anormalmente altos\" de la memoria terminarán invitando tanto a nuevos competidores como a fricción geopolítica entre países que dependen del mismo puñado de fabricantes.",
+    "source": "The Korea Herald",
+    "source_url": "https://www.koreaherald.com/article/10812835",
+    "editorial_priority": "high",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "El protagonista es el presidente de una de las pocas empresas del mundo capaces de fabricar la memoria que necesita cualquier centro de datos de IA. La tensión: la misma escasez que enriquece a SK Hynix amenaza con convertir un insumo industrial en un arma de negociación entre estados. El cambio: la memoria RAM, un componente hasta hace poco genérico y reemplazable, pasa a tratarse como un recurso estratégico que los gobiernos disputan.",
+    "urgency": "Now"
+  },
+  {
+    "id": 4,
+    "headline": "Google DeepMind lanza un programa de bioseguridad y ofrece acceso restringido a sus modelos a gobiernos y científicos",
+    "summary": "DeepMind presentó, junto a su filial Isomorphic Labs, una iniciativa de \"bioresiliencia\" para mejorar la vigilancia de patógenos, acelerar el diseño de vacunas y fortalecer la respuesta a brotes, con más de 15 alianzas ya firmadas con gobiernos y organizaciones de bioseguridad en el último año. La empresa también amplía el acceso a sus modelos y agentes de IA para investigadores y gobiernos considerados de confianza, clasificando esos despliegues como de \"bajo riesgo\" bajo su propio marco de seguridad interno.",
+    "source": "Axios",
+    "source_url": "https://www.axios.com/2026/07/16/google-deepmind-biosecurity-safety",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es DeepMind, que pasa de advertir sobre el riesgo biológico de su propia tecnología a ofrecerse como la infraestructura que gobiernos y científicos van a necesitar para vigilar patógenos. La tensión: la misma IA que puede diseñar proteínas peligrosas es la que ahora se vende como la herramienta para detectarlas a tiempo. El cambio: la vigilancia biológica de un país empieza a depender de a quién Google decida darle acceso a sus modelos.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 5,
+    "headline": "La IA ya opera de punta a punta ataques a agencias gubernamentales, según nuevos análisis de seguridad",
+    "summary": "Investigadores documentaron intrusiones a gran escala contra agencias de gobierno en las que sistemas de IA —tanto estadounidenses como chinos— no solo asistieron sino que ejecutaron directamente etapas completas del ataque: identificación de fallas, generación de comandos y partes de la intrusión misma. El hallazgo no implica todavía un hackeo totalmente autónomo, pero marca el paso de la IA de asistente ocasional a \"un par de manos extra\" en toda la cadena de un ciberataque.",
+    "source": "Nextgov/FCW",
+    "source_url": "https://www.nextgov.com/cybersecurity/2026/07/ai-once-relegated-helping-hackers-certain-tasks-can-now-power-every-stage-cyberattack/414744/",
+    "editorial_priority": "high",
+    "editorial_axis": "Dual-use risk — biology, cybersecurity, surveillance, automation of critical decisions",
+    "angle_hint": "El protagonista es el analista de una agencia de gobierno que, al reconstruir un ataque, descubre que buena parte de las decisiones no las tomó un humano del otro lado sino un modelo de IA operando la intrusión. La tensión: la misma capacidad que promete automatizar el trabajo también automatiza el crimen contra las instituciones que deberían protegerse de él. El cambio: la ciberseguridad de un estado deja de ser una carrera entre humanos y pasa a ser una carrera entre sistemas de IA atacantes y defensores.",
+    "urgency": "Now"
+  },
+  {
+    "id": 6,
+    "headline": "Microsoft prepara una herramienta de IA para cazar vulnerabilidades y competir con Mythos, de Anthropic",
+    "summary": "Microsoft planea lanzar antes de fin de julio \"Project Perception\", una plataforma que combina modelos de Anthropic, OpenAI y de la propia Microsoft mediante un \"enrutador\" que elige el mejor modelo para cada tarea de seguridad, con un costo estimado muy por debajo del de Mythos, cuyo uso vía API resulta hasta el doble de caro que Opus. El proyecto, liderado por la nueva jefa de seguridad Hayete Gallot, busca instalar una herramienta de IA dentro de la infraestructura de TI de empresas para detectar y corregir fallas antes de que se exploten.",
+    "source": "TechTimes / The Information",
+    "source_url": "https://www.techtimes.com/articles/320958/20260719/microsoft-project-perception-ai-bug-hunter-set-rival-mythos-wider-access-lower-cost.htm",
+    "editorial_priority": "medium",
+    "editorial_axis": "AI as material infrastructure — chips, data centers, APIs, industrial dependency chains",
+    "angle_hint": "La protagonista es la empresa que hoy custodia su infraestructura crítica con un producto de un solo laboratorio de IA y mañana podría depender de un \"enrutador\" que decide, sin que ella lo sepa, qué modelo revisa su seguridad. La tensión: la defensa cibernética corporativa empieza a delegarse en una capa de IA gestionada por gigantes tecnológicos que compiten entre sí por ese mismo mercado. El cambio: encontrar una vulnerabilidad antes que un atacante deja de ser tarea de un equipo humano y pasa a ser un servicio de suscripción entre proveedores de IA.",
+    "urgency": "Now"
+  },
+  {
+    "id": 7,
+    "headline": "California prohíbe por ley que una IA reemplace a un maestro en las escuelas públicas",
+    "summary": "El gobernador Gavin Newsom firmó la ley AB 2148, que establece que todo empleado o contratista que preste servicios en una escuela pública de California debe ser una \"persona natural\", cerrando la puerta a que un sistema de IA ocupe roles docentes o de evaluación del personal. La norma no prohíbe usar IA para planificar clases, corregir o traducir, pero responde directamente al temor de que la tecnología termine evaluando o reemplazando el juicio profesional de los docentes.",
+    "source": "EdSource",
+    "source_url": "https://edsource.org/updates/california-law-ensures-humans-not-ai-are-teaching-the-states-k-12-students",
+    "editorial_priority": "high",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "La protagonista es una maestra de escuela pública californiana a la que la ley ahora blinda frente a la posibilidad de que un sistema de IA ocupe su puesto o mida su desempeño. La tensión: mientras distritos escolares de todo el país adoptan IA para aliviar la falta de personal, California legisla en sentido contrario. El cambio: por primera vez un estado entero traza una línea legal explícita entre lo que una IA puede asistir en un aula y lo que solo puede hacer una persona.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 8,
+    "headline": "El Reino Unido empieza a probar asistentes de IA dentro de los tribunales penales para descongestionar la Justicia",
+    "summary": "El gobierno británico anunció un programa piloto que introduce asistentes de IA para investigación legal y análisis de casos en las Crown Courts, además de una herramienta para que los jueces prioricen y agrupen causas listas para juicio, en medio de un atraso judicial que supera las 80.000 causas pendientes. Antes de llegar a los tribunales, la tecnología se probará primero en entornos controlados con estándares específicos de uso seguro y ético, desarrollados junto a expertos legales y desarrolladores de IA.",
+    "source": "GOV.UK",
+    "source_url": "https://www.gov.uk/government/news/ai-tech-ambition-to-deliver-smarter-justice-for-victims",
+    "editorial_priority": "medium",
+    "editorial_axis": "Transformation of real institutions — AI integrated into healthcare, justice, education, government, media",
+    "angle_hint": "El protagonista es la víctima que espera años por un juicio en un sistema judicial colapsado, ahora rehén de si un piloto de IA logra o no acelerar los tiempos. La tensión: introducir IA en el corazón del proceso penal promete velocidad pero abre la pregunta de qué pasa cuando la maquinaria que decide sobre la libertad de una persona empieza a apoyarse en un asistente automatizado. El cambio: la Justicia penal, una de las instituciones más reacias a delegar criterio, empieza a probar oficialmente dónde puede ceder terreno a la IA.",
+    "urgency": "Has legs"
+  },
+  {
+    "id": 9,
+    "headline": "El nuevo Siri de Apple, disponible en beta pública, corre sobre los modelos de Google en lugar de tecnología propia",
+    "summary": "Apple lanzó la beta pública de iOS 27 con el rediseño más profundo de Siri hasta la fecha, capaz de leer correos, fotos y mensajes del usuario y responder sobre lo que aparece en pantalla, pero construido sobre los modelos Gemini de Google en lugar de un modelo propio o de OpenAI, con quien Apple había explorado un acuerdo antes de terminar demandándolo por robo de secretos comerciales. La decisión deja al asistente más usado del mundo dependiendo del modelo de un competidor directo en el negocio de la IA.",
+    "source": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
+    "editorial_priority": "high",
+    "editorial_axis": "Autonomy vs. dependency — capture by platforms, closed models, corporate ecosystems, subscriptions",
+    "angle_hint": "La protagonista es Apple, la empresa que más presume controlar toda su cadena tecnológica y que ahora pone el corazón de su asistente más usado en manos de los modelos de Google. La tensión: no lograr construir un modelo propio competitivo obliga a la compañía más valiosa del mundo a depender de un rival directo para su producto de IA más visible. El cambio: ni siquiera Apple puede evitar la dependencia de un puñado de laboratorios de IA que hoy controlan los modelos de frontera.",
+    "urgency": "Has legs"
+  }
+]
